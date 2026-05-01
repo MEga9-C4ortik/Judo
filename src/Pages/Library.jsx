@@ -1,5 +1,5 @@
-import techniques from "./techniques.json";
-import Card from "./components/Card";
+import techniques from "../data/techniques.json";
+import Card from "../components/Card";
 
 function Library() {
     return (
