@@ -1,7 +1,7 @@
-function Card({id,nameEN,nameJP,category,description,youtubeID}) {
+function Card({nameEN,nameJP,category,description,youtubeID}) {
     return (
         <div className="card">
-            <img className="image" src={`/images/${id}`}> </img>
+            <img src={`https://img.youtube.com/vi/${youtubeID}/maxresdefault.jpg`} />
             <div className="body">
                 <span className="name">
                     <p> {nameEN} </p>
