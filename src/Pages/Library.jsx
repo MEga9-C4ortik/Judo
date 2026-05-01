@@ -5,6 +5,7 @@ function Library() {
     return (
         techniques.map(technique =>
             <Card
+                key={technique.id}
                 id={technique.id}
                 image={technique.image}
                 nameEN={technique.nameEN}
