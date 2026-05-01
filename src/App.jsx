@@ -5,3 +5,5 @@ function App() {
         <Library/>
     )
 }
+
+export default App;

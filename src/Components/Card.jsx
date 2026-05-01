@@ -1,4 +1,4 @@
-function Card(id,nameEN,nameJP,category,description,youtubeID) {
+function Card({id,nameEN,nameJP,category,description,youtubeID}) {
     return (
         <div className="card">
             <img className="image" src={`/images/${id}`}> </img>
