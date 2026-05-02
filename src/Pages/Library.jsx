@@ -3,7 +3,8 @@ import Card from "../components/Card";
 
 function Library() {
     return (
-        techniques.map(technique =>
+        <div>
+            techniques.map(technique =>
             <Card
                 key={technique.id}
                 image={technique.image}
@@ -13,6 +14,7 @@ function Library() {
                 description={technique.description}
                 youtubeID={technique.youtubeId}
             />)
+        </div>
     );
 }
 
