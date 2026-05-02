@@ -1,11 +1,11 @@
-import technique from "../data/techniques.json";
+import techniques from "../data/techniques.json";
 import styles from "./Library.module.css"
 import Card from "../components/Card";
 
 function Library() {
     return (
         <div className={styles.Library}>
-            techniques.map(technique =>
+            {techniques.map(technique =>
             <Card
                 key={technique.id}
                 nameEN={technique.nameEN}
@@ -13,7 +13,7 @@ function Library() {
                 category={technique.category}
                 description={technique.description}
                 youtubeID={technique.youtubeID}
-            />)
+            />)}
         </div>
     );
 }
