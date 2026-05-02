@@ -1,3 +1,39 @@
 .card {
+    display: flex;
+    background: #e1ecf0;
+    width: 350px;
+    height: 500px;
+    padding: 10px;
+    margin: 10px;
+    border: 2px #e5e4e7 solid;
+    border-radius: 8px;
+}
+
+.img {
+    max-width: 348px;
+    max-height: 498px;
+}
+
+.body {
+
+}
+
+.name {
+
+}
+
+.category {
+
+}
+
+.description {
+
+}
+
+.link {
+
+}
+
+.link:hover {
 
 }
