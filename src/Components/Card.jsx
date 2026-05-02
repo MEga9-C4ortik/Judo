@@ -11,7 +11,8 @@ function Card({nameEN,nameJP,category,description,youtubeID}) {
                 </span>
                 <p className={styles.category}> {category}</p>
                 <p className={styles.description}> {description}</p>
-                <a className={styles.link} href={`https://www.youtube.com/watch?v=${youtubeID}`}> Youtube Link </a>
+                <a className={styles.link} href={`https://www.youtube.com/watch?v=${youtubeID}`} target="_blank" rel="noopener noreferrer">
+                    Youtube Link </a>
             </div>
         </div>
     )
