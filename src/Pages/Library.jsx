@@ -1,9 +1,10 @@
 import technique from "../data/techniques.json";
+import styles from "./Library.module.css"
 import Card from "../components/Card";
 
 function Library() {
     return (
-        <div>
+        <div className={styles.Library}>
             techniques.map(technique =>
             <Card
                 key={technique.id}
