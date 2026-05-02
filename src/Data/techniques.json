@@ -5,7 +5,7 @@
     "nameJP": "大腰",
     "category": "Nage-waza",
     "description": "A fundamental hip throw where you load your opponent onto your hip and rotate them to the ground.",
-    "youtubeId": "yhu1mfy2vJ4",
+    "youtubeID": "yhu1mfy2vJ4"
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@
     "nameJP": "大外刈",
     "category": "Nage-waza",
     "description": "A major outer reaping throw. You reap your opponent's leg from the outside while breaking their balance backward.",
-    "youtubeId": "c-A_nP7mKAc",
+    "youtubeID": "c-A_nP7mKAc"
   },
   {
     "id": 3,
@@ -21,7 +21,7 @@
     "nameJP": "背負い投げ",
     "category": "Nage-waza",
     "description": "A shoulder throw where you load your opponent onto your back and throw them forward over your shoulder.",
-    "youtubeId": "zIq0xI0ogxk",
+    "youtubeID": "zIq0xI0ogxk"
   },
   {
     "id": 4,
@@ -29,7 +29,7 @@
     "nameJP": "袈裟固",
     "category": "Ne-waza",
     "description": "Scarf hold. A fundamental pinning technique where you control your opponent by holding their head and arm while seated beside them.",
-    "youtubeId": "NDaQuJOFBYk",
+    "youtubeID": "NDaQuJOFBYk"
   },
   {
     "id": 5,
@@ -37,7 +37,7 @@
     "nameJP": "横四方固",
     "category": "Ne-waza",
     "description": "Side four-quarter hold. You control your opponent from the side, securing both their hips and head.",
-    "youtubeId": "TT7XJVSEQxA",
+    "youtubeID": "TT7XJVSEQxA"
   },
   {
     "id": 6,
@@ -45,6 +45,6 @@
     "nameJP": "十字固",
     "category": "Ne-waza",
     "description": "Cross armlock. You hyperextend your opponent's elbow joint by placing their arm across your hips while lying perpendicular to them.",
-    "youtubeId": "OWgSOlCuMXw",
+    "youtubeID": "OWgSOlCuMXw"
   }
 ]
