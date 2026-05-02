@@ -1,4 +1,4 @@
-import techniques from "../data/techniques.json";
+import technique from "../data/techniques.json";
 import Card from "../components/Card";
 
 function Library() {
@@ -12,7 +12,7 @@ function Library() {
                 nameJP={technique.nameJP}
                 category={technique.category}
                 description={technique.description}
-                youtubeID={technique.youtubeId}
+                youtubeID={technique.youtubeID}
             />)
         </div>
     );
