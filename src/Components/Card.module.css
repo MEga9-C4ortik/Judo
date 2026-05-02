@@ -23,6 +23,7 @@
     flex-direction: column;
     padding: 8px 0;
     gap: 6px;
+    overflow: hidden;
 }
 
 .name {
@@ -34,7 +35,11 @@
 }
 
 .description {
-
+    flex: 1;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 }
 
 .link {
