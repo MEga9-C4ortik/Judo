@@ -6,14 +6,14 @@ function Library() {
     return (
         <div className={styles.Library}>
             {techniques.map(technique =>
-            <Card
-                key={technique.id}
-                nameEN={technique.nameEN}
-                nameJP={technique.nameJP}
-                category={technique.category}
-                description={technique.description}
-                youtubeID={technique.youtubeID}
-            />)}
+                <Card
+                    key={technique.id}
+                    nameEN={technique.nameEN}
+                    nameJP={technique.nameJP}
+                    category={technique.category}
+                    description={technique.description}
+                    youtubeID={technique.youtubeID}
+                />)}
         </div>
     );
 }
