@@ -1,82 +1,84 @@
 .card {
     display: flex;
-    flex-direction: row;
-    background: #1a1612;
-    border-left: 3px solid #C0392B;
-    border-radius: 4px;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 8px;
     overflow: hidden;
+    border: 1px solid #C0392B;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .card:hover {
-    transform: translateX(6px);
-    box-shadow: -4px 0 16px rgba(192, 57, 43, 0.25);
+    transform: translateY(-8px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+    border-left: 5px solid #C0392B;
 }
 
 .img {
-    width: 220px;
-    min-width: 220px;
+    width: 100%;
+    height: 180px;
     object-fit: cover;
 }
 
 .body {
-    padding: 20px 24px;
+    padding: 16px 20px 20px;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 10px;
     align-items: flex-start;
+    flex: 1;
 }
 
 .name {
     display: flex;
     flex-direction: column;
     gap: 2px;
-    text-align: left;
 }
 
 .name p:first-child {
-    color: #e8dcc8;
+    color: #1a1612;
     font-weight: 600;
-    font-size: 22px;
+    font-size: 18px;
     font-family: 'Noto Serif JP', serif;
-    letter-spacing: 0.4px;
+    letter-spacing: 0.3px;
 }
 
 .name p:last-child {
-    color: #7a6a5a;
-    font-size: 20px;
+    color: #9a8878;
+    font-size: 13px;
     font-family: 'Noto Serif JP', serif;
     letter-spacing: 2px;
 }
 
 .category {
     display: inline-block;
-    padding: 4px 12px;
-    background: rgba(192, 57, 43, 0.12);
-    border: 1px solid rgba(192, 57, 43, 0.4);
+    padding: 2px 12px;
+    background: rgba(192, 57, 43, 0.08);
+    border: 1px solid rgba(192, 57, 43, 0.35);
     border-radius: 999px;
     color: #C0392B;
-    font-size: 17px;
+    font-size: 11px;
     font-family: 'Noto Serif JP', serif;
     letter-spacing: 1px;
 }
 
 .description {
-    color: #9a8070;
-    font-size: 16px;
+    color: #6b5e52;
+    font-size: 13px;
     font-family: 'Noto Serif JP', serif;
-    line-height: 1.7;
+    line-height: 1.75;
+    flex: 1;
 }
 
 .link {
     display: inline-block;
-    margin-top: auto;
+    margin-top: 4px;
     padding: 6px 18px;
     background: #C0392B;
     color: #fff;
     border-radius: 999px;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 12px;
     font-family: 'Noto Serif JP', serif;
     transition: background 0.2s ease, transform 0.2s ease;
 }

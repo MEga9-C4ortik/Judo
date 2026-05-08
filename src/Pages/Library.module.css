@@ -1,6 +1,22 @@
 .Library {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
     padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+    .Library {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 24px;
+    }
+}
+
+@media (max-width: 560px) {
+    .Library {
+        grid-template-columns: 1fr;
+        padding: 16px;
+    }
 }
