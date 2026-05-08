@@ -9,7 +9,7 @@ function Card({nameEN,nameJP,category,description,youtubeID}) {
                     <p> {nameEN} </p>
                     <p> {nameJP} </p>
                 </div>
-                <p className={styles.category}> {category}</p>
+                <p className={styles.category}> Category: {category}</p>
                 <p className={styles.description}> {description}</p>
                 <a className={styles.link} href={`https://www.youtube.com/watch?v=${youtubeID}`} target="_blank" rel="noopener noreferrer">
                     Youtube Link </a>

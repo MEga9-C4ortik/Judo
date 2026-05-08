@@ -1,7 +1,6 @@
 .Library {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
-    background: #fff;
+    flex-direction: column;
+    gap: 16px;
+    padding: 40px;
 }
