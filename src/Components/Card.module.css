@@ -6,10 +6,10 @@
     border-radius: 4px;
     overflow: hidden;
     transition: transform 0.2s ease;
+}
 
-    &:hover {
-        transform: translateX(4px);
-    }
+.card:hover {
+    transform: translateX(4px);
 }
 
 .img {
@@ -51,18 +51,16 @@
 }
 
 .link {
-    display: block;
-    margin-top: 20px;
-    padding: 10px 0 0 0;
-    color: #eee;
-    font-weight: 560;
-    font-size: 16px;
-    background: #c0392b;
-    border-radius: 4px;
+    display: inline-block;
+    padding: 8px 7px;
+    background: #C0392B;
+    color: #fff;
+    border-radius: 999px;
     text-decoration: none;
-
 }
 
 .link:hover {
-    text-decoration: underline;
+    background: #bf5348;
+    text-decoration: none;
+    transform: translateY(-2px);
 }
