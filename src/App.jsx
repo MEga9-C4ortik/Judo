@@ -1,9 +1,18 @@
-import Library from "./Pages/Library";
-import Routes from "react-dom";
+import { Routes, Route } from 'react-router-dom'
+import Navbar from './Components/Navbar'
+import Library from './Pages/Library'
+import About from './Pages/About'
 
 function App() {
     return (
-        <Library/>
+        <>
+            <Navbar />
+            <Routes>
+                <Route path="/" element={<Library />} />
+                <Route path="/about" element={<About />} />
+            </Routes>
+            <Library />
+        </>
     )
 }
 
