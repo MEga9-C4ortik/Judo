@@ -1,21 +1,21 @@
 .card {
     display: flex;
     flex-direction: row;
-    background: #e3cccc;
-    border: 3px solid #666;
+    background: #1a1612;
+    border-left: 3px solid #C0392B;
     border-radius: 4px;
     overflow: hidden;
-    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .card:hover {
-    transform: translateX(4px);
+    transform: translateX(6px);
+    box-shadow: -4px 0 16px rgba(192, 57, 43, 0.25);
 }
 
 .img {
-    width: 100%;
+    width: 220px;
     min-width: 220px;
-    height: 100%;
     object-fit: cover;
 }
 
@@ -24,43 +24,64 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
+    align-items: flex-start;
 }
 
 .name {
-    color: #000;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    text-align: left;
+}
+
+.name p:first-child {
+    color: #e8dcc8;
     font-weight: 600;
-    font-size: 20px;
-    margin: 0;
+    font-size: 22px;
+    font-family: 'Noto Serif JP', serif;
     letter-spacing: 0.4px;
 }
 
+.name p:last-child {
+    color: #7a6a5a;
+    font-size: 20px;
+    font-family: 'Noto Serif JP', serif;
+    letter-spacing: 2px;
+}
+
 .category {
-    color: #000;
-    font-weight: 700;
-    font-size: 18px;
-    margin: 0;
-    letter-spacing: 0.8px;
+    display: inline-block;
+    padding: 4px 12px;
+    background: rgba(192, 57, 43, 0.12);
+    border: 1px solid rgba(192, 57, 43, 0.4);
+    border-radius: 999px;
+    color: #C0392B;
+    font-size: 17px;
+    font-family: 'Noto Serif JP', serif;
+    letter-spacing: 1px;
 }
 
 .description {
-    color: #000;
-    font-weight: 400;
+    color: #9a8070;
     font-size: 16px;
-    margin: 0;
-    letter-spacing: 0px;
+    font-family: 'Noto Serif JP', serif;
+    line-height: 1.7;
 }
 
 .link {
     display: inline-block;
-    padding: 8px 7px;
+    margin-top: auto;
+    padding: 6px 18px;
     background: #C0392B;
     color: #fff;
     border-radius: 999px;
     text-decoration: none;
+    font-size: 13px;
+    font-family: 'Noto Serif JP', serif;
+    transition: background 0.2s ease, transform 0.2s ease;
 }
 
 .link:hover {
-    background: #bf5348;
-    text-decoration: none;
+    background: #a93226;
     transform: translateY(-2px);
 }
