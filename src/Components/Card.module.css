@@ -38,14 +38,14 @@
 .name p:first-child {
     color: #1a1612;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 22px;
     font-family: 'Noto Serif JP', serif;
     letter-spacing: 0.3px;
 }
 
 .name p:last-child {
     color: #9a8878;
-    font-size: 13px;
+    font-size: 20px;
     font-family: 'Noto Serif JP', serif;
     letter-spacing: 2px;
 }
@@ -53,18 +53,18 @@
 .category {
     display: inline-block;
     padding: 2px 12px;
-    background: rgba(192, 57, 43, 0.08);
+    background: rgba(192, 57, 43, 0.07);
     border: 1px solid rgba(192, 57, 43, 0.35);
     border-radius: 999px;
     color: #C0392B;
-    font-size: 11px;
+    font-size: 16px;
     font-family: 'Noto Serif JP', serif;
     letter-spacing: 1px;
 }
 
 .description {
     color: #6b5e52;
-    font-size: 13px;
+    font-size: 16px;
     font-family: 'Noto Serif JP', serif;
     line-height: 1.75;
     flex: 1;
@@ -78,7 +78,7 @@
     color: #fff;
     border-radius: 999px;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 14px;
     font-family: 'Noto Serif JP', serif;
     transition: background 0.2s ease, transform 0.2s ease;
 }
