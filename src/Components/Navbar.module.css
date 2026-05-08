@@ -5,6 +5,7 @@
     padding: 16px 40px;
     background: #fff;
     border-bottom: 1px solid #e8e0d5;
+    position: relative; /* добавлено */
 }
 
 .logo {
@@ -53,18 +54,29 @@
     }
 
     .menu {
-        display: none;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background: #fff;
+        gap: 2px;
         position: absolute;
-        top: 60px;
+        top: 100%;
         left: 0;
         right: 0;
-        flex-direction: column;
-        background: #fff;
-        padding: 16px 40px;
-        border-bottom: 1px solid #e8e0d5;
+        z-index: 99;
+        padding: 12px 20px;
+        border-bottom: 1px solid #1f2028;
+        box-sizing: border-box;
+
+        transform: translateY(-10px);
+        opacity: 0;
+        pointer-events: none;
+        transition: transform 0.3s ease, opacity 0.25s ease;
     }
 
     .menu.open {
-        display: flex;
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: all;
     }
 }
