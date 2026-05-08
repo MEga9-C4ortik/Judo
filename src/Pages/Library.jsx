@@ -1,6 +1,6 @@
 import techniques from "../data/techniques.json";
 import styles from "./Library.module.css"
-import Card from "../components/Card";
+import Card from "../Components/Card.jsx";
 
 function Library() {
     return (
