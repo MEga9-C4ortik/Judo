@@ -1,4 +1,4 @@
-import techniques from "../data/techniques.json";
+import techniques from "../Data/techniques.json";
 import styles from "./Library.module.css"
 import Card from "../Components/Card.jsx";
 
