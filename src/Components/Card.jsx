@@ -3,7 +3,7 @@ import styles from "./Card.module.css";
 function Card({nameEN,nameJP,category,description,youtubeID}) {
     return (
         <div className={styles.card}>
-            <img className={styles.img} src={`https://img.youtube.com/vi/${youtubeID}/maxresdefault.png`} />
+            <img className={styles.img} src={`https://img.youtube.com/vi/${youtubeID}/maxresdefault.jpg`} />
             <div className={styles.body}>
                 <div className={styles.name}>
                     <p> {nameEN} </p>

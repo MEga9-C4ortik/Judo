@@ -1,12 +1,12 @@
 .card {
     display: flex;
     flex-direction: column;
-    background: #e1ecf0;
+    background: #a3afb3;
     width: 350px;
     height: 500px;
     padding: 10px;
     margin: 10px;
-    border: 2px #e5e4e7 solid;
+    border: 10px #272727 solid;
     border-radius: 8px;
 }
 
@@ -26,11 +26,11 @@
 }
 
 .name {
-
+    color: #000;
 }
 
 .category {
-
+    color: #000;
 }
 
 .description {
