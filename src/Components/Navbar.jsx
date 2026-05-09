@@ -11,7 +11,7 @@ function Navbar() {
 
             <button
                 className={styles.burger}
-                onClick={() => setIsOpen(!isOpen)}
+                onClick={() => isOpen? setIsOpen(false) : setIsOpen(true) }
             >
                 <span />
                 <span />

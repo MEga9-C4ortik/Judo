@@ -4,8 +4,8 @@
     justify-content: space-between;
     padding: 16px 40px;
     background: #fff;
-    border-bottom: 1px solid #e8e0d5;
-    position: relative; /* добавлено */
+    border-bottom: 1.5px solid #000;
+    position: relative;
 }
 
 .logo {
@@ -31,7 +31,7 @@
     color: #1a1612;
     text-decoration: none;
     font-family: 'Noto Serif JP', serif;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 @media (max-width: 768px) {
