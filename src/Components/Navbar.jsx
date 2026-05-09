@@ -11,7 +11,7 @@ function Navbar() {
 
             <button
                 className={styles.burger}
-                onClick={() => isOpen? setIsOpen(false) : setIsOpen(true) }
+                onClick={() => setIsOpen(!isOpen) }
             >
                 <span />
                 <span />
@@ -19,8 +19,10 @@ function Navbar() {
             </button>
 
             <ul className={`${styles.menu} ${isOpen ? styles.open : ''}`}>
-                <li><Link to="/">Library</Link></li>
-                <li><Link to="/about">About</Link></li>
+                <li><Link to="/" onClick={ () => setIsOpen(false)}>
+                    Library</Link></li>
+                <li><Link to="/about" onClick={ () => setIsOpen(false)}>
+                    About</Link></li>
             </ul>
         </nav>
     )
