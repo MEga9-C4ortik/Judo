@@ -7,10 +7,12 @@ function Library() {
     const [selectedCategory, setCategory] = useState("");
     const [searchQuery, setSearchQuery] = useState("");
     const categories = [...new Set(techniques.map(t => t.category))];
+    const normalize = (str) =>
+        str.toLowerCase().replace(/[\s\-]/g, "");
 
     const filtered = techniques
         .filter(t => !selectedCategory || t.category === selectedCategory)
-        .filter(t => t.nameEN.toLowerCase().includes(searchQuery.toLowerCase()));
+        .filter(t => normalize(t.nameEN).includes(normalize(searchQuery)));
 
     return (
         <>
