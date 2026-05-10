@@ -18,7 +18,7 @@ function Library() {
         <>
             <div className={styles.controls}>
                 <div className={styles.filters}>
-                    <button className={selectedCategory ? styles.active : styles.btn}
+                    <button className={selectedCategory === "" ? styles.active : styles.btn}
                             onClick={() => setCategory("")}>
                         All
                     </button>
