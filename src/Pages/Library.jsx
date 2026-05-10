@@ -5,15 +5,24 @@ import {useState} from "react";
 
 function Library() {
     const [selectedCategory, setCategory] = useState("");
+    const categories = [...new Set(techniques.map(t => t.category))];
 
     const filtered = techniques
         .filter(t => !selectedCategory || t.category === selectedCategory);
 
     return (
         <div className={styles.Library}>
-            <button onClick={() => setCategory("")}>All</button>
-            <button onClick={() => setCategory("Nage-waza")}> Nage-waza </button>
-            <button onClick={() => setCategory("Ne-waza")}> Ne-waza </button>
+            <div className={styles.filters}>
+                <button className={selectedCategory ? styles.active : styles.btn}
+                        onClick={() => setCategory("")}>
+                    All
+                </button>
+
+                {categories.map(t =>
+                    <button className={selectedCategory === t.category ? styles.active : styles.btn}
+                            onClick={() => setCategory(t)}>{t}</button>
+                )}
+            </div>
 
             {filtered.map(technique =>
                 <Card
