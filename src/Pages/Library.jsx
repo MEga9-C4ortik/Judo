@@ -5,10 +5,12 @@ import {useState} from "react";
 
 function Library() {
     const [selectedCategory, setCategory] = useState("");
+    const [searchQuery, setSearchQuery] = useState("");
     const categories = [...new Set(techniques.map(t => t.category))];
 
     const filtered = techniques
-        .filter(t => !selectedCategory || t.category === selectedCategory);
+        .filter(t => !selectedCategory || t.category === selectedCategory)
+        .filter(t => t.nameEN.toLowerCase().includes(searchQuery.toLowerCase()));
 
     return (
         <>
@@ -27,6 +29,14 @@ function Library() {
                         </button>
                     )}
                 </div>
+
+                <input
+                    className={styles.search}
+                    type="text"
+                    placeholder="Search technique..."
+                    value={searchQuery}
+                    onChange={e => setSearchQuery(e.target.value)}
+                />
             </div>
             <div className={styles.Library}>
                 {filtered.map(technique =>
