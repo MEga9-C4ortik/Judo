@@ -89,10 +89,3 @@
         box-sizing: border-box;
     }
 }
-
-@media (max-width: 900px) {
-    .Library {
-        grid-template-columns: repeat(2, 1fr);
-        padding: 24px;
-    }
-}
