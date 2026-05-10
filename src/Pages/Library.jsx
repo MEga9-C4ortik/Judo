@@ -19,8 +19,11 @@ function Library() {
                 </button>
 
                 {categories.map(t =>
-                    <button className={selectedCategory === t.category ? styles.active : styles.btn}
-                            onClick={() => setCategory(t)}>{t}</button>
+                    <button className={selectedCategory === t ? styles.active : styles.btn}
+                            key={t}
+                            onClick={() => setCategory(t)}>
+                        {t}
+                    </button>
                 )}
             </div>
 
