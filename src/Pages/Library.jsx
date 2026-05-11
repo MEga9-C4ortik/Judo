@@ -41,7 +41,7 @@ function Library() {
                 />
             </div>
             <div className={styles.Library}>
-                {filtered.map(technique =>
+                {filtered.map(technique => (technique > 0) ?
                     <Card
                         key={technique.id}
                         nameEN={technique.nameEN}
@@ -49,7 +49,9 @@ function Library() {
                         category={technique.category}
                         description={technique.description}
                         youtubeID={technique.youtubeID}
-                    />)}
+                    /> :
+                    <span className={styles.notFound}> Nothing found </span>
+                )}
             </div>
         </>
     );
