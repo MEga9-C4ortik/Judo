@@ -5,7 +5,8 @@
     "nameJP": "大腰",
     "category": "Nage-waza",
     "description": "A fundamental hip throw where you load your opponent onto your hip and rotate them to the ground.",
-    "youtubeID": "yhu1mfy2vJ4"
+    "youtubeID": "yhu1mfy2vJ4",
+    "difficulty": "Yellow"
   },
   {
     "id": 2,
@@ -13,7 +14,8 @@
     "nameJP": "大外刈",
     "category": "Nage-waza",
     "description": "A major outer reaping throw. You reap your opponent's leg from the outside while breaking their balance backward.",
-    "youtubeID": "c-A_nP7mKAc"
+    "youtubeID": "c-A_nP7mKAc",
+    "difficulty": "Yellow"
   },
   {
     "id": 3,
@@ -21,7 +23,8 @@
     "nameJP": "背負い投げ",
     "category": "Nage-waza",
     "description": "A shoulder throw where you load your opponent onto your back and throw them forward over your shoulder.",
-    "youtubeID": "zIq0xI0ogxk"
+    "youtubeID": "zIq0xI0ogxk",
+    "difficulty": "Yellow"
   },
   {
     "id": 4,
@@ -29,7 +32,8 @@
     "nameJP": "袈裟固",
     "category": "Ne-waza",
     "description": "Scarf hold. A fundamental pinning technique where you control your opponent by holding their head and arm while seated beside them.",
-    "youtubeID": "NDaQuJOFBYk"
+    "youtubeID": "NDaQuJOFBYk",
+    "difficulty": "Yellow"
   },
   {
     "id": 5,
@@ -37,7 +41,8 @@
     "nameJP": "横四方固",
     "category": "Ne-waza",
     "description": "Side four-quarter hold. You control your opponent from the side, securing both their hips and head.",
-    "youtubeID": "TT7XJVSEQxA"
+    "youtubeID": "TT7XJVSEQxA",
+    "difficulty": "Yellow"
   },
   {
     "id": 6,
@@ -45,6 +50,862 @@
     "nameJP": "十字固",
     "category": "Ne-waza",
     "description": "Cross armlock. You hyperextend your opponent's elbow joint by placing their arm across your hips while lying perpendicular to them.",
-    "youtubeID": "OWgSOlCuMXw"
+    "youtubeID": "OWgSOlCuMXw",
+    "difficulty": "Blue"
+  },
+  {
+    "id": 7,
+    "nameEN": "Ippon-seoi-nage",
+    "nameJP": "一本背負投",
+    "category": "Nage-waza",
+    "description": "A one-arm shoulder throw. You control your opponent's sleeve and slide your other arm under their armpit before dropping under them and throwing them over your back.",
+    "youtubeID": "FQnOlCxo4oI",
+    "difficulty": "Yellow"
+  },
+  {
+    "id": 8,
+    "nameEN": "O-uchi-gari",
+    "nameJP": "大内刈",
+    "category": "Nage-waza",
+    "description": "A major inner reaping throw. You reap your opponent's leg from the inside while driving them backward off balance.",
+    "youtubeID": "0itJFhV9pDQ",
+    "difficulty": "Yellow"
+  },
+  {
+    "id": 9,
+    "nameEN": "De-ashi-harai",
+    "nameJP": "出足払",
+    "category": "Nage-waza",
+    "description": "An advancing foot sweep. You sweep your opponent's foot the instant they shift their weight onto it, timing the sweep with their own step.",
+    "youtubeID": "4BUUvqxi_Kk",
+    "difficulty": "Yellow"
+  },
+  {
+    "id": 10,
+    "nameEN": "Kata-gatame",
+    "nameJP": "肩固",
+    "category": "Ne-waza",
+    "description": "A shoulder pin. You trap your opponent's head and one arm against your shoulder while lying perpendicular across their upper body.",
+    "youtubeID": "zQR3IOXxO_Q",
+    "difficulty": "Yellow"
+  },
+  {
+    "id": 11,
+    "nameEN": "Kami-shiho-gatame",
+    "nameJP": "上四方固",
+    "category": "Ne-waza",
+    "description": "Upper four-quarter hold. You control your opponent from above their head, pinning both arms and driving your weight down onto their chest.",
+    "youtubeID": "HFuMjOv0WN8",
+    "difficulty": "Yellow"
+  },
+  {
+    "id": 12,
+    "nameEN": "Tate-shiho-gatame",
+    "nameJP": "縦四方固",
+    "category": "Ne-waza",
+    "description": "Vertical four-quarter hold. You straddle your opponent's torso, pinning them chest-to-chest facing the same direction.",
+    "youtubeID": "55-rFmBx53g",
+    "difficulty": "Yellow"
+  },
+  {
+    "id": 13,
+    "nameEN": "Tai-otoshi",
+    "nameJP": "体落",
+    "category": "Nage-waza",
+    "description": "A body drop. You block your opponent's leg with your own while pulling and rotating them forward over the obstruction.",
+    "youtubeID": "4x6S3Q-Ktv8",
+    "difficulty": "Orange"
+  },
+  {
+    "id": 14,
+    "nameEN": "Koshi-guruma",
+    "nameJP": "腰車",
+    "category": "Nage-waza",
+    "description": "A hip wheel. You wrap your arm around your opponent's neck and pivot them over your hip like a turning wheel.",
+    "youtubeID": "SU7Id6uVJ44",
+    "difficulty": "Orange"
+  },
+  {
+    "id": 15,
+    "nameEN": "Harai-goshi",
+    "nameJP": "払腰",
+    "category": "Nage-waza",
+    "description": "A sweeping hip throw. You load your opponent onto your hip and sweep their leg out from under them as you rotate.",
+    "youtubeID": "qTo8HlAAkOo",
+    "difficulty": "Orange"
+  },
+  {
+    "id": 16,
+    "nameEN": "Ko-uchi-gari",
+    "nameJP": "小内刈",
+    "category": "Nage-waza",
+    "description": "A minor inner reaping throw. You hook your opponent's heel from the inside with a small reaping motion to drop them backward.",
+    "youtubeID": "3Jb3tZvr9Ng",
+    "difficulty": "Orange"
+  },
+  {
+    "id": 17,
+    "nameEN": "Ko-soto-gari",
+    "nameJP": "小外刈",
+    "category": "Nage-waza",
+    "description": "A minor outer reaping throw. You reap your opponent's heel from the outside just as they step, dropping them straight back.",
+    "youtubeID": "jeQ541ScLB4",
+    "difficulty": "Orange"
+  },
+  {
+    "id": 18,
+    "nameEN": "Okuri-ashi-harai",
+    "nameJP": "送足払",
+    "category": "Nage-waza",
+    "description": "A sliding foot sweep. You sweep both of your opponent's feet together as they shift sideways, timing the sweep with their step.",
+    "youtubeID": "nw1ZdRjrdRI",
+    "difficulty": "Orange"
+  },
+  {
+    "id": 19,
+    "nameEN": "Hiza-guruma",
+    "nameJP": "膝車",
+    "category": "Nage-waza",
+    "description": "A knee wheel. You block your opponent's knee with your foot and pivot them over the block as you pull them off balance.",
+    "youtubeID": "JPJx9-oAVns",
+    "difficulty": "Orange"
+  },
+  {
+    "id": 20,
+    "nameEN": "Kuzure-kesa-gatame",
+    "nameJP": "崩袈裟固",
+    "category": "Ne-waza",
+    "description": "A modified scarf hold. A variation of Kesa-gatame where you switch your underneath arm to trap around your opponent's far arm instead of controlling their head.",
+    "youtubeID": "Q2fb9jaoUFQ",
+    "difficulty": "Orange"
+  },
+  {
+    "id": 21,
+    "nameEN": "Kuzure-kami-shiho-gatame",
+    "nameJP": "崩上四方固",
+    "category": "Ne-waza",
+    "description": "A modified upper four-quarter hold. A variation of Kami-shiho-gatame where you reach under one of your opponent's arms for a tighter, lower control.",
+    "youtubeID": "YUrogQWdwiY",
+    "difficulty": "Orange"
+  },
+  {
+    "id": 22,
+    "nameEN": "Ushiro-kesa-gatame",
+    "nameJP": "後袈裟固",
+    "category": "Ne-waza",
+    "description": "A reverse scarf hold. You pin your opponent facing away from their legs, the mirror image of the standard Kesa-gatame position.",
+    "youtubeID": "SBapox2M2dE",
+    "difficulty": "Orange"
+  },
+  {
+    "id": 23,
+    "nameEN": "Hadaka-jime",
+    "nameJP": "裸絞",
+    "category": "Ne-waza",
+    "description": "A rear naked strangle. Attacking from behind, you wrap an arm around your opponent's neck and squeeze both carotid arteries without gripping the jacket.",
+    "youtubeID": "9f0n8jez7iA",
+    "difficulty": "Orange"
+  },
+  {
+    "id": 24,
+    "nameEN": "Ude-garami",
+    "nameJP": "腕緘",
+    "category": "Ne-waza",
+    "description": "An entangled armlock. You bend your opponent's elbow to a right angle and rotate their shoulder joint by weaving your arm through theirs.",
+    "youtubeID": "AIlTvZb4RlE",
+    "difficulty": "Orange"
+  },
+  {
+    "id": 25,
+    "nameEN": "Seoi-otoshi",
+    "nameJP": "背負落",
+    "category": "Nage-waza",
+    "description": "A shoulder drop. Similar to Seoi-nage, but instead of throwing your opponent over your shoulder, you drop your knee and pull them down in front of you.",
+    "youtubeID": "vu1TMVNnq34",
+    "difficulty": "Green"
+  },
+  {
+    "id": 26,
+    "nameEN": "Tsurikomi-goshi",
+    "nameJP": "釣込腰",
+    "category": "Nage-waza",
+    "description": "A lift-pull hip throw. You lift your opponent up and forward with both hands before dropping your hips under them and rotating them over.",
+    "youtubeID": "McfzA0yRVt4",
+    "difficulty": "Green"
+  },
+  {
+    "id": 27,
+    "nameEN": "Tsuri-goshi",
+    "nameJP": "釣腰",
+    "category": "Nage-waza",
+    "description": "A lifting hip throw. You reach around your opponent's waist with your free arm and lift them onto your hip before rotating them over.",
+    "youtubeID": "51Htlp7xEvE",
+    "difficulty": "Green"
+  },
+  {
+    "id": 28,
+    "nameEN": "Hane-goshi",
+    "nameJP": "跳腰",
+    "category": "Nage-waza",
+    "description": "A spring hip throw. You load your opponent onto your hip and spring your leg up into their thigh to launch them over.",
+    "youtubeID": "M9_7De6A1kk",
+    "difficulty": "Green"
+  },
+  {
+    "id": 29,
+    "nameEN": "Ko-soto-gake",
+    "nameJP": "小外掛",
+    "category": "Nage-waza",
+    "description": "A minor outer hook. You hook your leg around the outside of your opponent's leg and drive them backward without lifting your foot off the mat.",
+    "youtubeID": "8b6kY4s4zH4",
+    "difficulty": "Green"
+  },
+  {
+    "id": 30,
+    "nameEN": "Ashi-guruma",
+    "nameJP": "足車",
+    "category": "Nage-waza",
+    "description": "A leg wheel. You block your opponent's leg with your straightened leg and pivot them over it, similar to Hiza-guruma but higher on the leg.",
+    "youtubeID": "ROeayhvom9U",
+    "difficulty": "Green"
+  },
+  {
+    "id": 31,
+    "nameEN": "O-guruma",
+    "nameJP": "大車",
+    "category": "Nage-waza",
+    "description": "A major wheel throw. You block your opponent's leg with your own straightened leg while pulling them up and over it in a large circular motion.",
+    "youtubeID": "SnZciTAY9vc",
+    "difficulty": "Green"
+  },
+  {
+    "id": 32,
+    "nameEN": "O-soto-otoshi",
+    "nameJP": "大外落",
+    "category": "Nage-waza",
+    "description": "A major outer drop. Similar to O-soto-gari but without the reaping leg contact — you drop your opponent backward using upper-body control alone.",
+    "youtubeID": "2DsVvDw7b8g",
+    "difficulty": "Green"
+  },
+  {
+    "id": 33,
+    "nameEN": "O-soto-guruma",
+    "nameJP": "大外車",
+    "category": "Nage-waza",
+    "description": "A major outer wheel. Like O-soto-gari, but you block both of your opponent's legs with your own leg for a wider, more controlling sweep.",
+    "youtubeID": "92KbCm6pQeI",
+    "difficulty": "Green"
+  },
+  {
+    "id": 34,
+    "nameEN": "Tomoe-nage",
+    "nameJP": "巴投",
+    "category": "Nage-waza",
+    "description": "A circle throw. You drop onto your back, plant a foot in your opponent's abdomen, and pull them up and over you in a circular arc.",
+    "youtubeID": "880WbHvHv6A",
+    "difficulty": "Green"
+  },
+  {
+    "id": 35,
+    "nameEN": "Tani-otoshi",
+    "nameJP": "谷落",
+    "category": "Nage-waza",
+    "description": "A valley drop. You step behind your opponent's leg to block it, then drop your own weight backward to fall them over the obstruction.",
+    "youtubeID": "3b9Me3Fohpk",
+    "difficulty": "Green"
+  },
+  {
+    "id": 36,
+    "nameEN": "Sasae-tsurikomi-ashi",
+    "nameJP": "支釣込足",
+    "category": "Nage-waza",
+    "description": "A supporting foot-lift throw. You block your opponent's ankle with your foot while lifting and pulling them forward over the block.",
+    "youtubeID": "699i--pvYmE",
+    "difficulty": "Green"
+  },
+  {
+    "id": 37,
+    "nameEN": "Ura-gatame",
+    "nameJP": "裏固",
+    "category": "Ne-waza",
+    "description": "A reverse hold. You pin your opponent from above while facing their feet, controlling them chest-to-chest in the opposite orientation from Kami-shiho-gatame.",
+    "youtubeID": "eeAHZB0v3XY",
+    "difficulty": "Green"
+  },
+  {
+    "id": 38,
+    "nameEN": "Nami-juji-jime",
+    "nameJP": "並十字絞",
+    "category": "Ne-waza",
+    "description": "A normal cross strangle. Both palms face inward as you cross your arms and grip your opponent's collar, squeezing both sides of their neck evenly.",
+    "youtubeID": "k2cHry9HByQ",
+    "difficulty": "Green"
+  },
+  {
+    "id": 39,
+    "nameEN": "Kata-juji-jime",
+    "nameJP": "片十字絞",
+    "category": "Ne-waza",
+    "description": "A half cross strangle. One palm faces in and one faces out as you cross your arms and grip the collar, applying more pressure on one side of the neck.",
+    "youtubeID": "3VZVUAmiMD8",
+    "difficulty": "Green"
+  },
+  {
+    "id": 40,
+    "nameEN": "Gyaku-juji-jime",
+    "nameJP": "逆十字絞",
+    "category": "Ne-waza",
+    "description": "A reverse cross strangle. Both palms face outward as you cross your arms and grip your opponent's collar, the mirror version of Nami-juji-jime.",
+    "youtubeID": "t3tQriIPdlI",
+    "difficulty": "Green"
+  },
+  {
+    "id": 41,
+    "nameEN": "Ude-hishigi-ude-gatame",
+    "nameJP": "腕挫腕固",
+    "category": "Ne-waza",
+    "description": "An arm-crush armlock. You trap your opponent's straightened arm against your own arm or shoulder and lever it to hyperextend the elbow.",
+    "youtubeID": "SBf0aTma1VI",
+    "difficulty": "Green"
+  },
+  {
+    "id": 42,
+    "nameEN": "Ude-hishigi-waki-gatame",
+    "nameJP": "腕挫腋固",
+    "category": "Ne-waza",
+    "description": "An arm-crush armlock. You clamp your opponent's arm under your armpit, trapping their wrist against your body while extending their elbow.",
+    "youtubeID": "8F5p1zuJRG0",
+    "difficulty": "Green"
+  },
+  {
+    "id": 43,
+    "nameEN": "Kata-guruma",
+    "nameJP": "肩車",
+    "category": "Nage-waza",
+    "description": "A shoulder wheel. You duck low, take your opponent onto your shoulders like a fireman's carry, and rotate them off to the side.",
+    "youtubeID": "cnHRhSy8yi4",
+    "difficulty": "Blue"
+  },
+  {
+    "id": 44,
+    "nameEN": "Sode-tsurikomi-goshi",
+    "nameJP": "袖釣込腰",
+    "category": "Nage-waza",
+    "description": "A sleeve lift-pull hip throw. Gripping both sleeves, you lift your opponent up and forward before rotating them over your hip.",
+    "youtubeID": "QsmAxpmYLOI",
+    "difficulty": "Blue"
+  },
+  {
+    "id": 45,
+    "nameEN": "Uchi-mata-sukashi",
+    "nameJP": "内股すかし",
+    "category": "Nage-waza",
+    "description": "An inner-thigh counter-throw. As your opponent attempts Uchi-mata, you shift your hips out of range and pull them past you off balance.",
+    "youtubeID": "V-RS3uhtVWM",
+    "difficulty": "Blue"
+  },
+  {
+    "id": 46,
+    "nameEN": "Uki-goshi",
+    "nameJP": "浮腰",
+    "category": "Nage-waza",
+    "description": "A floating hip throw. You wrap your arm around your opponent's waist and rotate them across the front of your hip without much lift.",
+    "youtubeID": "bPKwtB4lyOQ",
+    "difficulty": "Blue"
+  },
+  {
+    "id": 47,
+    "nameEN": "Ushiro-goshi",
+    "nameJP": "後腰",
+    "category": "Nage-waza",
+    "description": "A rear hip throw, typically used as a counter. You wrap your arms around your opponent's waist from the front and lift them backward over your hip.",
+    "youtubeID": "ORIYstuxYT8",
+    "difficulty": "Blue"
+  },
+  {
+    "id": 48,
+    "nameEN": "Tsubame-gaeshi",
+    "nameJP": "燕返",
+    "category": "Nage-waza",
+    "description": "A swallow counter throw. As your opponent attempts a foot sweep, you lift your leg out of the way and sweep their supporting leg instead.",
+    "youtubeID": "GwweWqqFB5g",
+    "difficulty": "Blue"
+  },
+  {
+    "id": 49,
+    "nameEN": "Uchi-mata",
+    "nameJP": "内股",
+    "category": "Nage-waza",
+    "description": "An inner-thigh throw. You sweep your leg up between your opponent's legs against their inner thigh while pulling them forward and around.",
+    "youtubeID": "iUpSu5J-bgw",
+    "difficulty": "Blue"
+  },
+  {
+    "id": 50,
+    "nameEN": "Soto-makikomi",
+    "nameJP": "外巻込",
+    "category": "Nage-waza",
+    "description": "An outer wrap-around throw. You wrap your arm around your opponent's arm and sacrifice your own balance, rolling them over as you fall to the outside.",
+    "youtubeID": "bWG9O1BVKtQ",
+    "difficulty": "Blue"
+  },
+  {
+    "id": 51,
+    "nameEN": "Ko-uchi-makikomi",
+    "nameJP": "小内巻込",
+    "category": "Nage-waza",
+    "description": "A minor inner wrap-around throw. Combining Ko-uchi-gari's reap with a wrapping arm, you roll your opponent over as you drop to the mat.",
+    "youtubeID": "_1eygIXLD_w",
+    "difficulty": "Blue"
+  },
+  {
+    "id": 52,
+    "nameEN": "Sumi-gaeshi",
+    "nameJP": "隅返",
+    "category": "Nage-waza",
+    "description": "A corner throw. You drop straight back onto the mat, hooking a leg behind your opponent's knee and pulling them over you as you fall.",
+    "youtubeID": "5VhduA5xkbA",
+    "difficulty": "Blue"
+  },
+  {
+    "id": 53,
+    "nameEN": "Yoko-otoshi",
+    "nameJP": "横落",
+    "category": "Nage-waza",
+    "description": "A side drop. You drop your body sideways to the mat while pulling your opponent's upper body down, sweeping their legs out from under them.",
+    "youtubeID": "MnNG67pF_a0",
+    "difficulty": "Blue"
+  },
+  {
+    "id": 54,
+    "nameEN": "Yoko-guruma",
+    "nameJP": "横車",
+    "category": "Nage-waza",
+    "description": "A side wheel, typically used as a counter to a hip throw. You drop sideways to the mat while pulling your opponent over and past you.",
+    "youtubeID": "MehP6I5cY2c",
+    "difficulty": "Blue"
+  },
+  {
+    "id": 55,
+    "nameEN": "Uki-gatame",
+    "nameJP": "浮固",
+    "category": "Ne-waza",
+    "description": "A floating pin. A lighter, more mobile hold where you control your opponent's arm and body with your weight balanced above rather than fully settled.",
+    "youtubeID": "e_lAjik1SUM",
+    "difficulty": "Blue"
+  },
+  {
+    "id": 56,
+    "nameEN": "Okuri-eri-jime",
+    "nameJP": "送襟絞",
+    "category": "Ne-waza",
+    "description": "A sliding collar strangle. Attacking from behind, you use one hand to pull the collar across the throat while the other hand slides in to reinforce the choke.",
+    "youtubeID": "EiqyoVcIAi8",
+    "difficulty": "Blue"
+  },
+  {
+    "id": 57,
+    "nameEN": "Kataha-jime",
+    "nameJP": "片羽絞",
+    "category": "Ne-waza",
+    "description": "A single-wing strangle. You pin one of your opponent's arms behind their back while choking with the collar, removing their ability to defend.",
+    "youtubeID": "yaTGgRjnwB8",
+    "difficulty": "Blue"
+  },
+  {
+    "id": 58,
+    "nameEN": "Ude-hishigi-juji-gatame",
+    "nameJP": "腕挫十字固",
+    "category": "Ne-waza",
+    "description": "The full name for the technique you already know as Juji-gatame — the cross armlock, extending your opponent's elbow across your hips while lying perpendicular to them.",
+    "youtubeID": "OWgSOlCuMXw",
+    "difficulty": "Blue"
+  },
+  {
+    "id": 59,
+    "nameEN": "Ude-hishigi-hiza-gatame",
+    "nameJP": "腕挫膝固",
+    "category": "Ne-waza",
+    "description": "An arm-crush armlock. You trap your opponent's arm against your knee, using your leg rather than your torso as the lever to extend their elbow.",
+    "youtubeID": "H2HtAJdiJcE",
+    "difficulty": "Blue"
+  },
+  {
+    "id": 60,
+    "nameEN": "Yama-arashi",
+    "nameJP": "山嵐",
+    "category": "Nage-waza",
+    "description": "A mountain-storm throw. A hybrid of a hand throw and a leg block — you pull your opponent forward while sweeping their leg out with your own.",
+    "youtubeID": "MGlyKmSuzdc",
+    "difficulty": "Brown"
+  },
+  {
+    "id": 61,
+    "nameEN": "Uki-otoshi",
+    "nameJP": "浮落",
+    "category": "Nage-waza",
+    "description": "A floating drop. With no leg contact at all, you break your opponent's balance forward and drop them purely through timing and rotation of your arms.",
+    "youtubeID": "6H5tmncOY4Q",
+    "difficulty": "Brown"
+  },
+  {
+    "id": 62,
+    "nameEN": "Sumi-otoshi",
+    "nameJP": "隅落",
+    "category": "Nage-waza",
+    "description": "A corner drop. You break your opponent's balance toward their back corner and drop them straight down with no significant leg or hip contact.",
+    "youtubeID": "lLU9wv52ni0",
+    "difficulty": "Brown"
+  },
+  {
+    "id": 63,
+    "nameEN": "Utsuri-goshi",
+    "nameJP": "移腰",
+    "category": "Nage-waza",
+    "description": "A switching hip throw, used as a counter. As your opponent lifts you onto their hip, you switch your hips underneath theirs and reverse the throw.",
+    "youtubeID": "4pQd_bEnlf0",
+    "difficulty": "Brown"
+  },
+  {
+    "id": 64,
+    "nameEN": "Obi-tori-gaeshi",
+    "nameJP": "帯取返",
+    "category": "Nage-waza",
+    "description": "A belt-grab counter throw. You grip your opponent's belt directly and lift them up and over, typically countering a failed hip or shoulder throw attempt.",
+    "youtubeID": "bpc82SrunUU",
+    "difficulty": "Brown"
+  },
+  {
+    "id": 65,
+    "nameEN": "Harai-tsurikomi-ashi",
+    "nameJP": "払釣込足",
+    "category": "Nage-waza",
+    "description": "A lift-pull sweeping ankle throw. You sweep your opponent's leg while lifting and pulling with your arms, similar to Sasae but with a sweeping rather than blocking leg action.",
+    "youtubeID": "gGPXvWL8VbE",
+    "difficulty": "Brown"
+  },
+  {
+    "id": 66,
+    "nameEN": "Hikikomi-gaeshi",
+    "nameJP": "引込返",
+    "category": "Nage-waza",
+    "description": "A pulling-in counter throw. You drop to the mat while pulling your opponent's sleeve and lapel down and around, rolling them over your body.",
+    "youtubeID": "92zUYWBp5N8",
+    "difficulty": "Brown"
+  },
+  {
+    "id": 67,
+    "nameEN": "Ura-nage",
+    "nameJP": "裏投",
+    "category": "Nage-waza",
+    "description": "A rear throw. You wrap your arms around your opponent's torso from the front, arch backward, and throw them over your head to the mat behind you.",
+    "youtubeID": "Fgi9b8DJ5sQ",
+    "difficulty": "Brown"
+  },
+  {
+    "id": 68,
+    "nameEN": "Uki-waza",
+    "nameJP": "浮技",
+    "category": "Nage-waza",
+    "description": "A floating sacrifice throw. You drop to the side while pulling your opponent forward and off balance, sweeping their supporting leg away.",
+    "youtubeID": "weVOpJ63gII",
+    "difficulty": "Brown"
+  },
+  {
+    "id": 69,
+    "nameEN": "Tawara-gaeshi",
+    "nameJP": "俵返",
+    "category": "Nage-waza",
+    "description": "A rice-bale counter throw. As your opponent attacks with a bent-over technique, you wrap around their torso and roll them backward over your body.",
+    "youtubeID": "TmTWgrmViZc",
+    "difficulty": "Brown"
+  },
+  {
+    "id": 70,
+    "nameEN": "Harai-makikomi",
+    "nameJP": "払巻込",
+    "category": "Nage-waza",
+    "description": "A sweeping wrap-around throw. You combine a sweeping leg action with wrapping your arm around your opponent's arm and sacrificing your balance to roll them over.",
+    "youtubeID": "VBaHzKaCXss",
+    "difficulty": "Brown"
+  },
+  {
+    "id": 71,
+    "nameEN": "O-soto-makikomi",
+    "nameJP": "大外巻込",
+    "category": "Nage-waza",
+    "description": "A major outer wrap-around throw. Combining O-soto-gari's reaping action with a wrapping arm, you sacrifice your own balance to roll your opponent over as you fall.",
+    "youtubeID": "DGDv2oMwmas",
+    "difficulty": "Brown"
+  },
+  {
+    "id": 72,
+    "nameEN": "Tsukkomi-jime",
+    "nameJP": "突込絞",
+    "category": "Ne-waza",
+    "description": "A thrusting strangle. You drive one hand deep across your opponent's collar while the other hand pulls the same lapel down, crossing your arms at the wrists.",
+    "youtubeID": "dKKpnD3eLcY",
+    "difficulty": "Brown"
+  },
+  {
+    "id": 73,
+    "nameEN": "Sankaku-jime",
+    "nameJP": "三角絞",
+    "category": "Ne-waza",
+    "description": "A triangle strangle. You lock your legs around your opponent's neck and one arm in a figure-four, using leg pressure to cut off blood flow.",
+    "youtubeID": "lq1CUBRAm7s",
+    "difficulty": "Brown"
+  },
+  {
+    "id": 74,
+    "nameEN": "Sode-guruma-jime",
+    "nameJP": "袖車絞",
+    "category": "Ne-waza",
+    "description": "A sleeve wheel strangle. You choke with one hand across the collar while your other hand controls your opponent's sleeve to prevent them from defending.",
+    "youtubeID": "E3nvQzClcAU",
+    "difficulty": "Brown"
+  },
+  {
+    "id": 75,
+    "nameEN": "Ude-hishigi-sankaku-gatame",
+    "nameJP": "腕挫三角固",
+    "category": "Ne-waza",
+    "description": "An arm-crush armlock. From a triangle leg position, you trap your opponent's arm between your legs and extend their elbow while your legs control their neck and shoulder.",
+    "youtubeID": "WefAmW4azhk",
+    "difficulty": "Brown"
+  },
+  {
+    "id": 76,
+    "nameEN": "Yoko-wakare",
+    "nameJP": "横分",
+    "category": "Nage-waza",
+    "description": "A side sacrifice throw. You drop to the mat on your side while pulling your opponent forward and off balance, throwing them past you.",
+    "youtubeID": "bp1tscHlePI",
+    "difficulty": "Black"
+  },
+  {
+    "id": 77,
+    "nameEN": "Daki-wakare",
+    "nameJP": "抱分",
+    "category": "Nage-waza",
+    "description": "An embracing sacrifice throw. You wrap both arms around your opponent's upper body and drop to your side, pulling them over you as you fall.",
+    "youtubeID": "Hr0cOMGBDYo",
+    "difficulty": "Black"
+  },
+  {
+    "id": 78,
+    "nameEN": "Yoko-gake",
+    "nameJP": "横掛",
+    "category": "Nage-waza",
+    "description": "A side hook. You hook your leg around your opponent's leg from the side while sacrificing your own balance, dropping them sideways to the mat.",
+    "youtubeID": "tP1Sj1uDfSo",
+    "difficulty": "Black"
+  },
+  {
+    "id": 79,
+    "nameEN": "Uchi-makikomi",
+    "nameJP": "内巻込",
+    "category": "Nage-waza",
+    "description": "An inner wrap-around throw. You trap your opponent's arm against your body and rotate forward, sacrificing your balance to roll them over your shoulder.",
+    "youtubeID": "5BowcjduxVc",
+    "difficulty": "Black"
+  },
+  {
+    "id": 80,
+    "nameEN": "Uchi-mata-makikomi",
+    "nameJP": "内股巻込",
+    "category": "Nage-waza",
+    "description": "A wrap-around version of Uchi-mata. You combine the inner-thigh sweep with wrapping your opponent's arm, sacrificing your balance to roll them over.",
+    "youtubeID": "jZXENTLpJCI",
+    "difficulty": "Black"
+  },
+  {
+    "id": 81,
+    "nameEN": "Hane-makikomi",
+    "nameJP": "跳巻込",
+    "category": "Nage-waza",
+    "description": "A wrap-around version of Hane-goshi. You combine the springing hip action with wrapping your opponent's arm, sacrificing your balance to roll them over.",
+    "youtubeID": "6CRBGLGz9j8",
+    "difficulty": "Black"
+  },
+  {
+    "id": 82,
+    "nameEN": "Ko-uchi-gaeshi",
+    "nameJP": "小内返",
+    "category": "Nage-waza",
+    "description": "A minor inner counter throw. As your opponent attempts Ko-uchi-gari against you, you lift your leg clear and reverse the throw back onto them.",
+    "youtubeID": "_MWAdYi_LC4",
+    "difficulty": "Black"
+  },
+  {
+    "id": 83,
+    "nameEN": "O-soto-gaeshi",
+    "nameJP": "大外返",
+    "category": "Nage-waza",
+    "description": "A major outer counter throw. As your opponent attempts O-soto-gari, you block their reaping leg and throw them backward before they complete it.",
+    "youtubeID": "8ZjM3X_EANo",
+    "difficulty": "Black"
+  },
+  {
+    "id": 84,
+    "nameEN": "O-uchi-gaeshi",
+    "nameJP": "大内返",
+    "category": "Nage-waza",
+    "description": "A major inner counter throw. As your opponent attempts O-uchi-gari, you block their reaping leg and reverse the throw back onto them.",
+    "youtubeID": "dCyZTXyjIXE",
+    "difficulty": "Black"
+  },
+  {
+    "id": 85,
+    "nameEN": "Harai-goshi-gaeshi",
+    "nameJP": "払腰返",
+    "category": "Nage-waza",
+    "description": "A sweeping hip counter throw. As your opponent loads you onto their hip for Harai-goshi, you block their sweeping leg and throw them instead.",
+    "youtubeID": "4U3It-7PPsc",
+    "difficulty": "Black"
+  },
+  {
+    "id": 86,
+    "nameEN": "Hane-goshi-gaeshi",
+    "nameJP": "跳腰返",
+    "category": "Nage-waza",
+    "description": "A spring hip counter throw. As your opponent loads you onto their hip for Hane-goshi, you block their springing leg and reverse the throw back onto them.",
+    "youtubeID": "9bZAZSBtnGs",
+    "difficulty": "Black"
+  },
+  {
+    "id": 87,
+    "nameEN": "Uchi-mata-gaeshi",
+    "nameJP": "内股返",
+    "category": "Nage-waza",
+    "description": "An inner-thigh counter throw. As your opponent attempts Uchi-mata, you block their sweeping leg and throw them backward before they complete it.",
+    "youtubeID": "Sy6sLWxkWYw",
+    "difficulty": "Black"
+  },
+  {
+    "id": 88,
+    "nameEN": "Katate-jime",
+    "nameJP": "片手絞",
+    "category": "Ne-waza",
+    "description": "A one-hand strangle. Using only one hand deep across the collar, you apply choking pressure while your other arm controls your opponent's body.",
+    "youtubeID": "cHeIs-fSqwE",
+    "difficulty": "Black"
+  },
+  {
+    "id": 89,
+    "nameEN": "Ryote-jime",
+    "nameJP": "両手絞",
+    "category": "Ne-waza",
+    "description": "A two-hand strangle. Both hands grip deep into the collar from the front, crossing at the wrists to compress both sides of the neck evenly.",
+    "youtubeID": "-RHC4V7TQiY",
+    "difficulty": "Black"
+  },
+  {
+    "id": 90,
+    "nameEN": "Ude-hishigi-hara-gatame",
+    "nameJP": "腕挫腹固",
+    "category": "Ne-waza",
+    "description": "An arm-crush armlock. You trap your opponent's arm against your stomach, using your torso as the lever to extend their elbow.",
+    "youtubeID": "ZzEycg8R_9M",
+    "difficulty": "Black"
+  },
+  {
+    "id": 91,
+    "nameEN": "Ude-hishigi-ashi-gatame",
+    "nameJP": "腕挫脚固",
+    "category": "Ne-waza",
+    "description": "An arm-crush armlock. You trap your opponent's arm between your legs, using leg pressure rather than your arms to extend their elbow.",
+    "youtubeID": "ClY7g_pX-4s",
+    "difficulty": "Black"
+  },
+  {
+    "id": 92,
+    "nameEN": "Ude-hishigi-te-gatame",
+    "nameJP": "腕挫手固",
+    "category": "Ne-waza",
+    "description": "An arm-crush armlock. You pin your opponent's wrist and hand directly, using your hands alone to lever and extend their elbow joint.",
+    "youtubeID": "6DnvhY0tQVM",
+    "difficulty": "Black"
+  },
+  {
+    "id": 93,
+    "nameEN": "Kawazu-gake",
+    "nameJP": "河津掛",
+    "category": "Nage-waza",
+    "description": "A leg entanglement throw. You hook your leg around your opponent's leg from behind and fall backward, taking them down with you.",
+    "youtubeID": "w6G57bWACi0",
+    "difficulty": "Not graded"
+  },
+  {
+    "id": 94,
+    "nameEN": "Kani-basami",
+    "nameJP": "蟹挟",
+    "category": "Nage-waza",
+    "description": "A scissor throw. You jump and clamp both legs around your opponent's leg and torso, scissoring them down to the mat.",
+    "youtubeID": "OR-HGHnarYc",
+    "difficulty": "Not graded"
+  },
+  {
+    "id": 95,
+    "nameEN": "Kibisu-gaeshi",
+    "nameJP": "踵返",
+    "category": "Nage-waza",
+    "description": "A heel-trip counter throw. You grab your opponent's heel directly with your hand and lift it as they step forward, tipping them backward.",
+    "youtubeID": "tJylJYfBliA",
+    "difficulty": "Not graded"
+  },
+  {
+    "id": 96,
+    "nameEN": "Kuchiki-taoshi",
+    "nameJP": "朽木倒",
+    "category": "Nage-waza",
+    "description": "A single-leg takedown. You grab behind your opponent's knee with one hand while pushing their upper body over with the other.",
+    "youtubeID": "ZNL47q1aJNY",
+    "difficulty": "Not graded"
+  },
+  {
+    "id": 97,
+    "nameEN": "Morote-gari",
+    "nameJP": "双手刈",
+    "category": "Nage-waza",
+    "description": "A double-leg takedown. You drop low and grab behind both of your opponent's knees with both hands, driving them backward to the mat.",
+    "youtubeID": "BHLQS4K85bs",
+    "difficulty": "Not graded"
+  },
+  {
+    "id": 98,
+    "nameEN": "Obi-otoshi",
+    "nameJP": "帯落",
+    "category": "Nage-waza",
+    "description": "A belt-drop throw. You grip your opponent's belt directly with one hand and lift them up and over.",
+    "youtubeID": "ff8U2TVZIYI",
+    "difficulty": "Not graded"
+  },
+  {
+    "id": 99,
+    "nameEN": "Sukui-nage",
+    "nameJP": "掬投",
+    "category": "Nage-waza",
+    "description": "A scooping throw. You duck low and scoop both of your opponent's legs out from under them with your arms.",
+    "youtubeID": "vU6aJ2kFxoI",
+    "difficulty": "Not graded"
+  },
+  {
+    "id": 100,
+    "nameEN": "Ashi-garami",
+    "nameJP": "足緘",
+    "category": "Ne-waza",
+    "description": "A leg entanglement lock. You trap your opponent's leg and hyperextend their knee or ankle joint by wrapping and controlling the limb.",
+    "youtubeID": "BWWb0GoAtZw",
+    "difficulty": "Not graded"
+  },
+  {
+    "id": 101,
+    "nameEN": "Do-jime",
+    "nameJP": "胴絞",
+    "category": "Ne-waza",
+    "description": "A body scissor choke. You wrap your legs around your opponent's torso and squeeze to compress their ribs and diaphragm.",
+    "youtubeID": "D_0fFcoIbvY",
+    "difficulty": "Not graded"
   }
 ]
