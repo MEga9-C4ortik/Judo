@@ -3,13 +3,14 @@
     align-items: center;
     justify-content: space-between;
     padding: 16px 40px;
-    right: 10px;
-    left: 10px;
+    right: 8px;
+    left: 0;
+    top: 0;
     width: auto;
     background: #fff;
     border-bottom: 1.5px solid #000;
     position: fixed;
-    margin: 0;
+    z-index: 120;
 }
 
 .logo {
