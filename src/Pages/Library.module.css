@@ -11,8 +11,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 24px 40px 0;
-    max-width: 1200px;
-    margin: 2px 0 20px 0;
+    margin: 70px 0 25px 0;
     width: 100%;
     box-sizing: border-box;
     gap: 28px;
@@ -22,7 +21,6 @@
     display: flex;
     gap: 8px;
     flex-wrap: wrap;
-    margin-top: 60px;
 }
 
 .btn {
@@ -32,7 +30,7 @@
     background: transparent;
     color: #6b5e52;
     font-family: 'Noto Serif JP', serif;
-    font-size: 16px;
+    font-size: 17px;
     cursor: pointer;
     transition: all 0.2s ease;
 }
@@ -56,12 +54,11 @@
 
 .search {
     padding: 10px 16px;
-    margin: 60px 0 5px 0;
     border-radius: 999px;
     border: 1px solid rgba(192, 57, 43, 0.35);
     background: #fff;
     font-family: 'Noto Serif JP', serif;
-    font-size: 16px;
+    font-size: 17px;
     color: #1a1612;
     outline: none;
     width: 220px;
