@@ -6,13 +6,26 @@ import {useState} from "react";
 function Library() {
     const [selectedCategory, setCategory] = useState("");
     const [searchQuery, setSearchQuery] = useState("");
+    const [belt, setBelt] = useState(0);
     const categories = [...new Set(techniques.map(t => t.category))];
     const normalize = (str) =>
         str.toLowerCase().replace(/[\s\-]/g, "");
+    const diffChg = (beltStr) => {
+        switch (beltStr) {
+            case "Yellow": return 1;
+            case "Orange": return 2;
+            case "Green": return 3;
+            case "Blue": return 4;
+            case "Brown": return 5;
+            case "Black": return 6;
+        }
+    }
 
     const filtered = techniques
         .filter(t => !selectedCategory || t.category === selectedCategory)
-        .filter(t => normalize(t.nameEN).includes(normalize(searchQuery)));
+        .filter(t => normalize(t.nameEN).includes(normalize(searchQuery)))
+        .filter(t => diffChg(t.difficulty) >= belt)
+    ;
 
     return (
         <>
@@ -40,6 +53,17 @@ function Library() {
                     onChange={e => setSearchQuery(e.target.value)}
                 />
             </div>
+
+            <div className={styles.beltFilter}>
+                <input
+                    type="range"
+                    min={1}
+                    max={6}
+                    value={belt}
+                    onChange={e => setBelt(e.target.value)}
+                />
+            </div>
+
             <div className={styles.Library}>
                 {(filtered.length > 0) ?
                     filtered.map(technique =>

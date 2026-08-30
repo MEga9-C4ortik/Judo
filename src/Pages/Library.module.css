@@ -1,8 +1,8 @@
 .Library {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-    padding: 0 40px;
+    gap: 25px;
+    padding: 0 20px;
     margin: 0 auto;
 }
 
@@ -10,7 +10,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 24px 40px 0;
+    padding: 24px 20px 0;
     margin: 70px 0 25px 0;
     width: 100%;
     box-sizing: border-box;
@@ -68,6 +68,10 @@
 .search:focus {
     border-color: #C0392B;
     box-shadow: 0 0 0 3px rgba(192, 57, 43, 0.15);
+}
+
+.beltFilter {
+
 }
 
 .notFound {
