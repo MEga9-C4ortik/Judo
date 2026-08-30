@@ -6,7 +6,7 @@ import {useState} from "react";
 function Library() {
     const [selectedCategory, setCategory] = useState("");
     const [searchQuery, setSearchQuery] = useState("");
-    const [belt, setBelt] = useState(0);
+    const [belt, setBelt] = useState(1);
     const categories = [...new Set(techniques.map(t => t.category))];
     const normalize = (str) =>
         str.toLowerCase().replace(/[\s\-]/g, "");
@@ -24,7 +24,7 @@ function Library() {
     const filtered = techniques
         .filter(t => !selectedCategory || t.category === selectedCategory)
         .filter(t => normalize(t.nameEN).includes(normalize(searchQuery)))
-        .filter(t => diffChg(t.difficulty) >= belt)
+        .filter(t => diffChg(t.difficulty) <= belt)
     ;
 
     return (
@@ -54,8 +54,8 @@ function Library() {
                 />
             </div>
 
-            <div className={styles.beltFilter}>
-                <input
+            <div>
+                <input className={styles.beltSlider}
                     type="range"
                     min={1}
                     max={6}
@@ -72,6 +72,7 @@ function Library() {
                             nameEN={technique.nameEN}
                             nameJP={technique.nameJP}
                             category={technique.category}
+                            difficulty={technique.difficulty}
                             description={technique.description}
                             youtubeID={technique.youtubeID}
                         />) :
