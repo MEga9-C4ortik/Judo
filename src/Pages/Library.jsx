@@ -6,7 +6,7 @@ import {useState} from "react";
 function Library() {
     const [selectedCategory, setCategory] = useState("");
     const [searchQuery, setSearchQuery] = useState("");
-    const [belt, setBelt] = useState(1);
+    const [belt, setBelt] = useState(6);
     const categories = [...new Set(techniques.map(t => t.category))];
     const normalize = (str) =>
         str.toLowerCase().replace(/[\s\-]/g, "");
@@ -54,7 +54,7 @@ function Library() {
                 />
             </div>
 
-            <div>
+            <div className={styles.beltFilter}>
                 <input className={styles.beltSlider}
                     type="range"
                     min={1}

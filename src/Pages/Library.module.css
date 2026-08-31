@@ -47,7 +47,7 @@
     background: #C0392B;
     color: #fff;
     font-family: 'Noto Serif JP', serif;
-    font-size: 16px;
+    font-size: 17px;
     cursor: pointer;
     transition: all 0.2s ease;
 }
@@ -70,10 +70,15 @@
     box-shadow: 0 0 0 3px rgba(192, 57, 43, 0.15);
 }
 
+.beltFilter {
+    padding: 10px 16px;
+    margin: 1px 0 25px 0;
+}
+
 .beltSlider {
     -webkit-appearance: none;
     appearance: none;
-    width: 100%;
+    width: 87%;
     height: 8px;
     border-radius: 999px;
     background: var(--belt-gradient, #eee);
@@ -138,5 +143,9 @@
     .search {
         width: 100%;
         box-sizing: border-box;
+    }
+
+    .notFound {
+        font-size: 38px;
     }
 }
