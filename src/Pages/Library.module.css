@@ -3,7 +3,7 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
     padding: 0 20px;
-    margin: 0 auto;
+    margin: 20px 0 20px 0;
 }
 
 .controls {
@@ -70,18 +70,21 @@
     box-shadow: 0 0 0 3px rgba(192, 57, 43, 0.15);
 }
 
-.beltFilter {
-    padding: 10px 16px;
-    margin: 1px 0 25px 0;
-}
-
 .beltSlider {
     -webkit-appearance: none;
     appearance: none;
-    width: 87%;
-    height: 8px;
+    width: 100%;
+    height: 12px;
+    margin: 12px 0 30px 0;
     border-radius: 999px;
-    background: var(--belt-gradient, #eee);
+    background: linear-gradient(to right,
+    #F4D03F 0%, #F4D03F 16.67%,
+    #E67E22 16.67%, #E67E22 33.33%,
+    #58AA5C 33.33%, #58AA5C 50%,
+    #3D7DCB 50%, #3D7DCB 66.67%,
+    #8B5A2B 66.67%, #8B5A2B 83.33%,
+    #1C1C1C 83.33%, #1C1C1C 100%
+    );
     outline: none;
 }
 
@@ -89,13 +92,27 @@
     -webkit-appearance: none;
     height: 8px;
     border-radius: 999px;
-    background: var(--belt-gradient, #eee);
+    background: linear-gradient(to right,
+    #F4D03F 0%, #F4D03F 16.67%,
+    #E67E22 16.67%, #E67E22 33.33%,
+    #58AA5C 33.33%, #58AA5C 50%,
+    #3D7DCB 50%, #3D7DCB 66.67%,
+    #8B5A2B 66.67%, #8B5A2B 83.33%,
+    #1C1C1C 83.33%, #1C1C1C 100%
+    );
 }
 
 .beltSlider::-moz-range-track {
     height: 8px;
     border-radius: 999px;
-    background: var(--belt-gradient, #eee);
+    background: linear-gradient(to right,
+    #F4D03F 0%, #F4D03F 16.67%,
+    #E67E22 16.67%, #E67E22 33.33%,
+    #58AA5C 33.33%, #58AA5C 50%,
+    #3D7DCB 50%, #3D7DCB 66.67%,
+    #8B5A2B 66.67%, #8B5A2B 83.33%,
+    #1C1C1C 83.33%, #1C1C1C 100%
+    );
 }
 
 .beltSlider::-webkit-slider-thumb {

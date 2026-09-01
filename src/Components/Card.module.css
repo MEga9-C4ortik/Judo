@@ -50,6 +50,13 @@
     letter-spacing: 2px;
 }
 
+.badges {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
 .category {
     display: inline-block;
     padding: 2px 12px;
@@ -60,6 +67,14 @@
     font-size: 16px;
     font-family: 'Noto Serif JP', serif;
     letter-spacing: 1px;
+}
+
+.difficulty {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 500;
 }
 
 .description {
