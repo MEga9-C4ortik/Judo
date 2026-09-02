@@ -1,13 +1,13 @@
 import styles from "./Card.module.css";
 
 const beltColors = {
-    Yellow: { bg: "#F4D03F", text: "#4a3c08" },
-    Orange: { bg: "#E67E22", text: "#4a2808" },
-    Green: { bg: "#58AA5C", text: "#1c3d1f" },
-    Blue: { bg: "#3D7DCB", text: "#ffffff" },
-    Brown: { bg: "#8B5A2B", text: "#ffffff" },
-    Black: { bg: "#1C1C1C", text: "#ffffff" },
-    "Not graded": { bg: "#E3DDD0", text: "#5c5346" },
+    Yellow:      { bg: "rgba(244,208,63,0.18)",  border: "rgba(244,208,63,0.6)",  text: "#6b5410" },
+    Orange:      { bg: "rgba(230,126,34,0.12)",  border: "rgba(230,126,34,0.5)", text: "#8a4a12" },
+    Green:       { bg: "rgba(88,170,92,0.12)",   border: "rgba(88,170,92,0.5)",  text: "#2d6b31" },
+    Blue:        { bg: "rgba(61,125,203,0.12)",  border: "rgba(61,125,203,0.5)", text: "#2c5c96" },
+    Brown:       { bg: "rgba(139,90,43,0.12)",   border: "rgba(139,90,43,0.5)",  text: "#6b4520" },
+    Black:       { bg: "rgba(28,28,28,0.08)",    border: "rgba(28,28,28,0.5)",    text: "#1C1C1C" },
+    "Not graded":{ bg: "rgba(107,94,82,0.10)",   border: "rgba(107,94,82,0.5)",  text: "#6b5e52" },
 };
 
 function Card({nameEN, nameJP, category, difficulty, description, youtubeID}) {
@@ -25,7 +25,11 @@ function Card({nameEN, nameJP, category, difficulty, description, youtubeID}) {
                     <p className={styles.category}> Category: {category}</p>
                     <p
                         className={styles.difficulty}
-                        style={{ background: belt.bg, color: belt.text }}
+                        style={{
+                            background: belt.bg,
+                            borderColor: belt.border,
+                            color: belt.text,
+                        }}
                     >
                         {difficulty}
                     </p>

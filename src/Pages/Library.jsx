@@ -8,8 +8,12 @@ function Library() {
     const [searchQuery, setSearchQuery] = useState("");
     const [belt, setBelt] = useState(6);
     const categories = [...new Set(techniques.map(t => t.category))];
+
     const normalize = (str) =>
         str.toLowerCase().replace(/[\s\-]/g, "");
+
+    const beltNames = ["Yellow", "Orange", "Green", "Blue", "Brown", "Black"];
+
     const diffChg = (beltStr) => {
         switch (beltStr) {
             case "Yellow": return 1;
@@ -55,12 +59,17 @@ function Library() {
             </div>
 
             <div className={styles.beltFilter}>
+                <div className={styles.beltFilterHeader}>
+                    <span className={styles.beltFilterLabel}>Show techniques up to</span>
+                    <span className={styles.beltFilterValue}>{beltNames[belt - 1]}</span>
+                </div>
                 <input className={styles.beltSlider}
-                    type="range"
-                    min={1}
-                    max={6}
-                    value={belt}
-                    onChange={e => setBelt(e.target.value)}
+                       type="range"
+                       min={1}
+                       max={6}
+                       value={belt}
+                       onChange={e => setBelt(e.target.value)}
+                       aria-label="Filter by belt level"
                 />
             </div>
 
