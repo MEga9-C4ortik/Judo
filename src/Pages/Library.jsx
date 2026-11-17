@@ -10,7 +10,7 @@ function Library() {
     const categories = [...new Set(techniques.map(t => t.category))];
 
     const normalize = (str) =>
-        str.toLowerCase().replace(/[\s\-]/g, "");
+        str.toLowerCase().replace(/[\s-]/g, "");
 
     const beltNames = ["Yellow", "Orange", "Green", "Blue", "Brown", "Black"];
 
@@ -36,6 +36,7 @@ function Library() {
             <div className={styles.controls}>
                 <div className={styles.filters}>
                     <button className={selectedCategory === "" ? styles.active : styles.btn}
+                            aria-pressed={selectedCategory === ""}
                             onClick={() => setCategory("")}>
                         All
                     </button>
@@ -43,6 +44,7 @@ function Library() {
                     {categories.map(t =>
                         <button className={selectedCategory === t ? styles.active : styles.btn}
                                 key={t}
+                                aria-pressed={selectedCategory === t}
                                 onClick={() => setCategory(t)}>
                             {t}
                         </button>
@@ -53,6 +55,7 @@ function Library() {
                     className={styles.search}
                     type="text"
                     placeholder="Search technique..."
+                    aria-label="Search techniques"
                     value={searchQuery}
                     onChange={e => setSearchQuery(e.target.value)}
                 />

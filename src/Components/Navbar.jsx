@@ -11,6 +11,9 @@ function Navbar() {
 
             <button
                 className={styles.burger}
+                aria-label="Menu"
+                aria-expanded={isOpen}
+                aria-controls="main-menu"
                 onClick={() => setIsOpen(!isOpen) }
             >
                 <span />
@@ -18,7 +21,7 @@ function Navbar() {
                 <span />
             </button>
 
-            <ul className={`${styles.menu} ${isOpen ? styles.open : ''}`}>
+            <ul id="main-menu" className={`${styles.menu} ${isOpen ? styles.open : ''}`}>
                 <li><Link to="/" onClick={ () => setIsOpen(false)}>
                     Library</Link></li>
                 <li><Link to="/about" onClick={ () => setIsOpen(false)}>

@@ -15,7 +15,7 @@ function Card({nameEN, nameJP, category, difficulty, description, youtubeID}) {
 
     return (
         <div className={styles.card}>
-            <img className={styles.img} src={`https://img.youtube.com/vi/${youtubeID}/maxresdefault.jpg`} alt={nameEN} />
+            <img className={styles.img} src={`https://img.youtube.com/vi/${youtubeID}/maxresdefault.jpg`} alt={nameEN} loading="lazy" decoding="async" />
             <div className={styles.body}>
                 <div className={styles.name}>
                     <p> {nameEN} </p>
@@ -35,7 +35,7 @@ function Card({nameEN, nameJP, category, difficulty, description, youtubeID}) {
                     </p>
                 </div>
                 <p className={styles.description}> {description}</p>
-                <a className={styles.link} href={`https://www.youtube.com/watch?v=${youtubeID}`} target="_blank" rel="noopener noreferrer">
+                <a className={styles.link} href={`https://www.youtube.com/watch?v=${youtubeID}`} target="_blank" rel="noopener noreferrer" aria-label={`Youtube Link: ${nameEN}`}>
                     Youtube Link </a>
             </div>
         </div>
