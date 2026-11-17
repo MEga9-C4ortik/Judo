@@ -45,6 +45,15 @@
     "difficulty": "Yellow"
   },
   {
+    "id": 6,
+    "nameEN": "Juji-gatame",
+    "nameJP": "十字固",
+    "category": "Ne-waza",
+    "description": "Cross armlock. You hyperextend your opponent's elbow joint by placing their arm across your hips while lying perpendicular to them.",
+    "youtubeID": "OWgSOlCuMXw",
+    "difficulty": "Blue"
+  },
+  {
     "id": 7,
     "nameEN": "Ippon-seoi-nage",
     "nameJP": "一本背負投",
@@ -367,15 +376,6 @@
     "description": "An arm-crush armlock. You clamp your opponent's arm under your armpit, trapping their wrist against your body while extending their elbow.",
     "youtubeID": "8F5p1zuJRG0",
     "difficulty": "Green"
-  },
-  {
-    "id": 6,
-    "nameEN": "Juji-gatame",
-    "nameJP": "十字固",
-    "category": "Ne-waza",
-    "description": "Cross armlock. You hyperextend your opponent's elbow joint by placing their arm across your hips while lying perpendicular to them.",
-    "youtubeID": "OWgSOlCuMXw",
-    "difficulty": "Blue"
   },
   {
     "id": 43,
