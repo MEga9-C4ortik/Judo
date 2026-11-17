@@ -46,15 +46,6 @@
   },
   {
     "id": 6,
-    "nameEN": "Juji-gatame",
-    "nameJP": "十字固",
-    "category": "Ne-waza",
-    "description": "Cross armlock. You hyperextend your opponent's elbow joint by placing their arm across your hips while lying perpendicular to them.",
-    "youtubeID": "OWgSOlCuMXw",
-    "difficulty": "Blue"
-  },
-  {
-    "id": 7,
     "nameEN": "Ippon-seoi-nage",
     "nameJP": "一本背負投",
     "category": "Nage-waza",
@@ -63,7 +54,7 @@
     "difficulty": "Yellow"
   },
   {
-    "id": 8,
+    "id": 7,
     "nameEN": "O-uchi-gari",
     "nameJP": "大内刈",
     "category": "Nage-waza",
@@ -72,7 +63,7 @@
     "difficulty": "Yellow"
   },
   {
-    "id": 9,
+    "id": 8,
     "nameEN": "De-ashi-harai",
     "nameJP": "出足払",
     "category": "Nage-waza",
@@ -81,7 +72,7 @@
     "difficulty": "Yellow"
   },
   {
-    "id": 10,
+    "id": 9,
     "nameEN": "Kata-gatame",
     "nameJP": "肩固",
     "category": "Ne-waza",
@@ -90,7 +81,7 @@
     "difficulty": "Yellow"
   },
   {
-    "id": 11,
+    "id": 10,
     "nameEN": "Kami-shiho-gatame",
     "nameJP": "上四方固",
     "category": "Ne-waza",
@@ -99,7 +90,7 @@
     "difficulty": "Yellow"
   },
   {
-    "id": 12,
+    "id": 11,
     "nameEN": "Tate-shiho-gatame",
     "nameJP": "縦四方固",
     "category": "Ne-waza",
@@ -108,7 +99,7 @@
     "difficulty": "Yellow"
   },
   {
-    "id": 13,
+    "id": 12,
     "nameEN": "Tai-otoshi",
     "nameJP": "体落",
     "category": "Nage-waza",
@@ -117,7 +108,7 @@
     "difficulty": "Orange"
   },
   {
-    "id": 14,
+    "id": 13,
     "nameEN": "Koshi-guruma",
     "nameJP": "腰車",
     "category": "Nage-waza",
@@ -126,7 +117,7 @@
     "difficulty": "Orange"
   },
   {
-    "id": 15,
+    "id": 14,
     "nameEN": "Harai-goshi",
     "nameJP": "払腰",
     "category": "Nage-waza",
@@ -135,7 +126,7 @@
     "difficulty": "Orange"
   },
   {
-    "id": 16,
+    "id": 15,
     "nameEN": "Ko-uchi-gari",
     "nameJP": "小内刈",
     "category": "Nage-waza",
@@ -144,7 +135,7 @@
     "difficulty": "Orange"
   },
   {
-    "id": 17,
+    "id": 16,
     "nameEN": "Ko-soto-gari",
     "nameJP": "小外刈",
     "category": "Nage-waza",
@@ -153,7 +144,7 @@
     "difficulty": "Orange"
   },
   {
-    "id": 18,
+    "id": 17,
     "nameEN": "Okuri-ashi-harai",
     "nameJP": "送足払",
     "category": "Nage-waza",
@@ -162,7 +153,7 @@
     "difficulty": "Orange"
   },
   {
-    "id": 19,
+    "id": 18,
     "nameEN": "Hiza-guruma",
     "nameJP": "膝車",
     "category": "Nage-waza",
@@ -171,7 +162,7 @@
     "difficulty": "Orange"
   },
   {
-    "id": 20,
+    "id": 19,
     "nameEN": "Kuzure-kesa-gatame",
     "nameJP": "崩袈裟固",
     "category": "Ne-waza",
@@ -180,7 +171,7 @@
     "difficulty": "Orange"
   },
   {
-    "id": 21,
+    "id": 20,
     "nameEN": "Kuzure-kami-shiho-gatame",
     "nameJP": "崩上四方固",
     "category": "Ne-waza",
@@ -189,7 +180,7 @@
     "difficulty": "Orange"
   },
   {
-    "id": 22,
+    "id": 21,
     "nameEN": "Ushiro-kesa-gatame",
     "nameJP": "後袈裟固",
     "category": "Ne-waza",
@@ -198,7 +189,7 @@
     "difficulty": "Orange"
   },
   {
-    "id": 23,
+    "id": 22,
     "nameEN": "Hadaka-jime",
     "nameJP": "裸絞",
     "category": "Ne-waza",
@@ -207,7 +198,7 @@
     "difficulty": "Orange"
   },
   {
-    "id": 24,
+    "id": 23,
     "nameEN": "Ude-garami",
     "nameJP": "腕緘",
     "category": "Ne-waza",
@@ -216,7 +207,7 @@
     "difficulty": "Orange"
   },
   {
-    "id": 25,
+    "id": 24,
     "nameEN": "Seoi-otoshi",
     "nameJP": "背負落",
     "category": "Nage-waza",
@@ -225,7 +216,7 @@
     "difficulty": "Green"
   },
   {
-    "id": 26,
+    "id": 25,
     "nameEN": "Tsurikomi-goshi",
     "nameJP": "釣込腰",
     "category": "Nage-waza",
@@ -234,7 +225,7 @@
     "difficulty": "Green"
   },
   {
-    "id": 27,
+    "id": 26,
     "nameEN": "Tsuri-goshi",
     "nameJP": "釣腰",
     "category": "Nage-waza",
@@ -243,7 +234,7 @@
     "difficulty": "Green"
   },
   {
-    "id": 28,
+    "id": 27,
     "nameEN": "Hane-goshi",
     "nameJP": "跳腰",
     "category": "Nage-waza",
@@ -252,7 +243,7 @@
     "difficulty": "Green"
   },
   {
-    "id": 29,
+    "id": 28,
     "nameEN": "Ko-soto-gake",
     "nameJP": "小外掛",
     "category": "Nage-waza",
@@ -261,7 +252,7 @@
     "difficulty": "Green"
   },
   {
-    "id": 30,
+    "id": 29,
     "nameEN": "Ashi-guruma",
     "nameJP": "足車",
     "category": "Nage-waza",
@@ -270,7 +261,7 @@
     "difficulty": "Green"
   },
   {
-    "id": 31,
+    "id": 30,
     "nameEN": "O-guruma",
     "nameJP": "大車",
     "category": "Nage-waza",
@@ -279,7 +270,7 @@
     "difficulty": "Green"
   },
   {
-    "id": 32,
+    "id": 31,
     "nameEN": "O-soto-otoshi",
     "nameJP": "大外落",
     "category": "Nage-waza",
@@ -288,7 +279,7 @@
     "difficulty": "Green"
   },
   {
-    "id": 33,
+    "id": 32,
     "nameEN": "O-soto-guruma",
     "nameJP": "大外車",
     "category": "Nage-waza",
@@ -297,7 +288,7 @@
     "difficulty": "Green"
   },
   {
-    "id": 34,
+    "id": 33,
     "nameEN": "Tomoe-nage",
     "nameJP": "巴投",
     "category": "Nage-waza",
@@ -306,7 +297,7 @@
     "difficulty": "Green"
   },
   {
-    "id": 35,
+    "id": 34,
     "nameEN": "Tani-otoshi",
     "nameJP": "谷落",
     "category": "Nage-waza",
@@ -315,7 +306,7 @@
     "difficulty": "Green"
   },
   {
-    "id": 36,
+    "id": 35,
     "nameEN": "Sasae-tsurikomi-ashi",
     "nameJP": "支釣込足",
     "category": "Nage-waza",
@@ -324,7 +315,7 @@
     "difficulty": "Green"
   },
   {
-    "id": 37,
+    "id": 36,
     "nameEN": "Ura-gatame",
     "nameJP": "裏固",
     "category": "Ne-waza",
@@ -333,7 +324,7 @@
     "difficulty": "Green"
   },
   {
-    "id": 38,
+    "id": 37,
     "nameEN": "Nami-juji-jime",
     "nameJP": "並十字絞",
     "category": "Ne-waza",
@@ -342,7 +333,7 @@
     "difficulty": "Green"
   },
   {
-    "id": 39,
+    "id": 38,
     "nameEN": "Kata-juji-jime",
     "nameJP": "片十字絞",
     "category": "Ne-waza",
@@ -351,7 +342,7 @@
     "difficulty": "Green"
   },
   {
-    "id": 40,
+    "id": 39,
     "nameEN": "Gyaku-juji-jime",
     "nameJP": "逆十字絞",
     "category": "Ne-waza",
@@ -360,7 +351,7 @@
     "difficulty": "Green"
   },
   {
-    "id": 41,
+    "id": 40,
     "nameEN": "Ude-hishigi-ude-gatame",
     "nameJP": "腕挫腕固",
     "category": "Ne-waza",
@@ -369,7 +360,7 @@
     "difficulty": "Green"
   },
   {
-    "id": 42,
+    "id": 41,
     "nameEN": "Ude-hishigi-waki-gatame",
     "nameJP": "腕挫腋固",
     "category": "Ne-waza",
@@ -378,7 +369,7 @@
     "difficulty": "Green"
   },
   {
-    "id": 43,
+    "id": 42,
     "nameEN": "Kata-guruma",
     "nameJP": "肩車",
     "category": "Nage-waza",
@@ -387,7 +378,7 @@
     "difficulty": "Blue"
   },
   {
-    "id": 44,
+    "id": 43,
     "nameEN": "Sode-tsurikomi-goshi",
     "nameJP": "袖釣込腰",
     "category": "Nage-waza",
@@ -396,7 +387,7 @@
     "difficulty": "Blue"
   },
   {
-    "id": 45,
+    "id": 44,
     "nameEN": "Uchi-mata-sukashi",
     "nameJP": "内股すかし",
     "category": "Nage-waza",
@@ -405,7 +396,7 @@
     "difficulty": "Blue"
   },
   {
-    "id": 46,
+    "id": 45,
     "nameEN": "Uki-goshi",
     "nameJP": "浮腰",
     "category": "Nage-waza",
@@ -414,7 +405,7 @@
     "difficulty": "Blue"
   },
   {
-    "id": 47,
+    "id": 46,
     "nameEN": "Ushiro-goshi",
     "nameJP": "後腰",
     "category": "Nage-waza",
@@ -423,7 +414,7 @@
     "difficulty": "Blue"
   },
   {
-    "id": 48,
+    "id": 47,
     "nameEN": "Tsubame-gaeshi",
     "nameJP": "燕返",
     "category": "Nage-waza",
@@ -432,7 +423,7 @@
     "difficulty": "Blue"
   },
   {
-    "id": 49,
+    "id": 48,
     "nameEN": "Uchi-mata",
     "nameJP": "内股",
     "category": "Nage-waza",
@@ -441,7 +432,7 @@
     "difficulty": "Blue"
   },
   {
-    "id": 50,
+    "id": 49,
     "nameEN": "Soto-makikomi",
     "nameJP": "外巻込",
     "category": "Nage-waza",
@@ -450,7 +441,7 @@
     "difficulty": "Blue"
   },
   {
-    "id": 51,
+    "id": 50,
     "nameEN": "Ko-uchi-makikomi",
     "nameJP": "小内巻込",
     "category": "Nage-waza",
@@ -459,7 +450,7 @@
     "difficulty": "Blue"
   },
   {
-    "id": 52,
+    "id": 51,
     "nameEN": "Sumi-gaeshi",
     "nameJP": "隅返",
     "category": "Nage-waza",
@@ -468,7 +459,7 @@
     "difficulty": "Blue"
   },
   {
-    "id": 53,
+    "id": 52,
     "nameEN": "Yoko-otoshi",
     "nameJP": "横落",
     "category": "Nage-waza",
@@ -477,7 +468,7 @@
     "difficulty": "Blue"
   },
   {
-    "id": 54,
+    "id": 53,
     "nameEN": "Yoko-guruma",
     "nameJP": "横車",
     "category": "Nage-waza",
@@ -486,7 +477,7 @@
     "difficulty": "Blue"
   },
   {
-    "id": 55,
+    "id": 54,
     "nameEN": "Uki-gatame",
     "nameJP": "浮固",
     "category": "Ne-waza",
@@ -495,7 +486,7 @@
     "difficulty": "Blue"
   },
   {
-    "id": 56,
+    "id": 55,
     "nameEN": "Okuri-eri-jime",
     "nameJP": "送襟絞",
     "category": "Ne-waza",
@@ -504,7 +495,7 @@
     "difficulty": "Blue"
   },
   {
-    "id": 57,
+    "id": 56,
     "nameEN": "Kataha-jime",
     "nameJP": "片羽絞",
     "category": "Ne-waza",
@@ -513,7 +504,7 @@
     "difficulty": "Blue"
   },
   {
-    "id": 58,
+    "id": 57,
     "nameEN": "Ude-hishigi-juji-gatame",
     "nameJP": "腕挫十字固",
     "category": "Ne-waza",
@@ -522,7 +513,7 @@
     "difficulty": "Blue"
   },
   {
-    "id": 59,
+    "id": 58,
     "nameEN": "Ude-hishigi-hiza-gatame",
     "nameJP": "腕挫膝固",
     "category": "Ne-waza",
@@ -531,7 +522,7 @@
     "difficulty": "Blue"
   },
   {
-    "id": 60,
+    "id": 59,
     "nameEN": "Yama-arashi",
     "nameJP": "山嵐",
     "category": "Nage-waza",
@@ -540,7 +531,7 @@
     "difficulty": "Brown"
   },
   {
-    "id": 61,
+    "id": 60,
     "nameEN": "Uki-otoshi",
     "nameJP": "浮落",
     "category": "Nage-waza",
@@ -549,7 +540,7 @@
     "difficulty": "Brown"
   },
   {
-    "id": 62,
+    "id": 61,
     "nameEN": "Sumi-otoshi",
     "nameJP": "隅落",
     "category": "Nage-waza",
@@ -558,7 +549,7 @@
     "difficulty": "Brown"
   },
   {
-    "id": 63,
+    "id": 62,
     "nameEN": "Utsuri-goshi",
     "nameJP": "移腰",
     "category": "Nage-waza",
@@ -567,7 +558,7 @@
     "difficulty": "Brown"
   },
   {
-    "id": 64,
+    "id": 63,
     "nameEN": "Obi-tori-gaeshi",
     "nameJP": "帯取返",
     "category": "Nage-waza",
@@ -576,7 +567,7 @@
     "difficulty": "Brown"
   },
   {
-    "id": 65,
+    "id": 64,
     "nameEN": "Harai-tsurikomi-ashi",
     "nameJP": "払釣込足",
     "category": "Nage-waza",
@@ -585,7 +576,7 @@
     "difficulty": "Brown"
   },
   {
-    "id": 66,
+    "id": 65,
     "nameEN": "Hikikomi-gaeshi",
     "nameJP": "引込返",
     "category": "Nage-waza",
@@ -594,7 +585,7 @@
     "difficulty": "Brown"
   },
   {
-    "id": 67,
+    "id": 66,
     "nameEN": "Ura-nage",
     "nameJP": "裏投",
     "category": "Nage-waza",
@@ -603,7 +594,7 @@
     "difficulty": "Brown"
   },
   {
-    "id": 68,
+    "id": 67,
     "nameEN": "Uki-waza",
     "nameJP": "浮技",
     "category": "Nage-waza",
@@ -612,7 +603,7 @@
     "difficulty": "Brown"
   },
   {
-    "id": 69,
+    "id": 68,
     "nameEN": "Tawara-gaeshi",
     "nameJP": "俵返",
     "category": "Nage-waza",
@@ -621,7 +612,7 @@
     "difficulty": "Brown"
   },
   {
-    "id": 70,
+    "id": 69,
     "nameEN": "Harai-makikomi",
     "nameJP": "払巻込",
     "category": "Nage-waza",
@@ -630,7 +621,7 @@
     "difficulty": "Brown"
   },
   {
-    "id": 71,
+    "id": 70,
     "nameEN": "O-soto-makikomi",
     "nameJP": "大外巻込",
     "category": "Nage-waza",
@@ -639,7 +630,7 @@
     "difficulty": "Brown"
   },
   {
-    "id": 72,
+    "id": 71,
     "nameEN": "Tsukkomi-jime",
     "nameJP": "突込絞",
     "category": "Ne-waza",
@@ -648,7 +639,7 @@
     "difficulty": "Brown"
   },
   {
-    "id": 73,
+    "id": 72,
     "nameEN": "Sankaku-jime",
     "nameJP": "三角絞",
     "category": "Ne-waza",
@@ -657,7 +648,7 @@
     "difficulty": "Brown"
   },
   {
-    "id": 74,
+    "id": 73,
     "nameEN": "Sode-guruma-jime",
     "nameJP": "袖車絞",
     "category": "Ne-waza",
@@ -666,7 +657,7 @@
     "difficulty": "Brown"
   },
   {
-    "id": 75,
+    "id": 74,
     "nameEN": "Ude-hishigi-sankaku-gatame",
     "nameJP": "腕挫三角固",
     "category": "Ne-waza",
@@ -675,7 +666,7 @@
     "difficulty": "Brown"
   },
   {
-    "id": 76,
+    "id": 75,
     "nameEN": "Yoko-wakare",
     "nameJP": "横分",
     "category": "Nage-waza",
@@ -684,7 +675,7 @@
     "difficulty": "Black"
   },
   {
-    "id": 77,
+    "id": 76,
     "nameEN": "Daki-wakare",
     "nameJP": "抱分",
     "category": "Nage-waza",
@@ -693,7 +684,7 @@
     "difficulty": "Black"
   },
   {
-    "id": 78,
+    "id": 77,
     "nameEN": "Yoko-gake",
     "nameJP": "横掛",
     "category": "Nage-waza",
@@ -702,7 +693,7 @@
     "difficulty": "Black"
   },
   {
-    "id": 79,
+    "id": 78,
     "nameEN": "Uchi-makikomi",
     "nameJP": "内巻込",
     "category": "Nage-waza",
@@ -711,7 +702,7 @@
     "difficulty": "Black"
   },
   {
-    "id": 80,
+    "id": 79,
     "nameEN": "Uchi-mata-makikomi",
     "nameJP": "内股巻込",
     "category": "Nage-waza",
@@ -720,7 +711,7 @@
     "difficulty": "Black"
   },
   {
-    "id": 81,
+    "id": 80,
     "nameEN": "Hane-makikomi",
     "nameJP": "跳巻込",
     "category": "Nage-waza",
@@ -729,7 +720,7 @@
     "difficulty": "Black"
   },
   {
-    "id": 82,
+    "id": 81,
     "nameEN": "Ko-uchi-gaeshi",
     "nameJP": "小内返",
     "category": "Nage-waza",
@@ -738,7 +729,7 @@
     "difficulty": "Black"
   },
   {
-    "id": 83,
+    "id": 82,
     "nameEN": "O-soto-gaeshi",
     "nameJP": "大外返",
     "category": "Nage-waza",
@@ -747,7 +738,7 @@
     "difficulty": "Black"
   },
   {
-    "id": 84,
+    "id": 83,
     "nameEN": "O-uchi-gaeshi",
     "nameJP": "大内返",
     "category": "Nage-waza",
@@ -756,7 +747,7 @@
     "difficulty": "Black"
   },
   {
-    "id": 85,
+    "id": 84,
     "nameEN": "Harai-goshi-gaeshi",
     "nameJP": "払腰返",
     "category": "Nage-waza",
@@ -765,7 +756,7 @@
     "difficulty": "Black"
   },
   {
-    "id": 86,
+    "id": 85,
     "nameEN": "Hane-goshi-gaeshi",
     "nameJP": "跳腰返",
     "category": "Nage-waza",
@@ -774,7 +765,7 @@
     "difficulty": "Black"
   },
   {
-    "id": 87,
+    "id": 86,
     "nameEN": "Uchi-mata-gaeshi",
     "nameJP": "内股返",
     "category": "Nage-waza",
@@ -783,7 +774,7 @@
     "difficulty": "Black"
   },
   {
-    "id": 88,
+    "id": 87,
     "nameEN": "Katate-jime",
     "nameJP": "片手絞",
     "category": "Ne-waza",
@@ -792,7 +783,7 @@
     "difficulty": "Black"
   },
   {
-    "id": 89,
+    "id": 88,
     "nameEN": "Ryote-jime",
     "nameJP": "両手絞",
     "category": "Ne-waza",
@@ -801,7 +792,7 @@
     "difficulty": "Black"
   },
   {
-    "id": 90,
+    "id": 89,
     "nameEN": "Ude-hishigi-hara-gatame",
     "nameJP": "腕挫腹固",
     "category": "Ne-waza",
@@ -810,7 +801,7 @@
     "difficulty": "Black"
   },
   {
-    "id": 91,
+    "id": 90,
     "nameEN": "Ude-hishigi-ashi-gatame",
     "nameJP": "腕挫脚固",
     "category": "Ne-waza",
@@ -819,7 +810,7 @@
     "difficulty": "Black"
   },
   {
-    "id": 92,
+    "id": 91,
     "nameEN": "Ude-hishigi-te-gatame",
     "nameJP": "腕挫手固",
     "category": "Ne-waza",
@@ -828,7 +819,7 @@
     "difficulty": "Black"
   },
   {
-    "id": 93,
+    "id": 92,
     "nameEN": "Kawazu-gake",
     "nameJP": "河津掛",
     "category": "Nage-waza",
@@ -837,7 +828,7 @@
     "difficulty": "Not graded"
   },
   {
-    "id": 94,
+    "id": 93,
     "nameEN": "Kani-basami",
     "nameJP": "蟹挟",
     "category": "Nage-waza",
@@ -846,7 +837,7 @@
     "difficulty": "Not graded"
   },
   {
-    "id": 95,
+    "id": 94,
     "nameEN": "Kibisu-gaeshi",
     "nameJP": "踵返",
     "category": "Nage-waza",
@@ -855,7 +846,7 @@
     "difficulty": "Not graded"
   },
   {
-    "id": 96,
+    "id": 95,
     "nameEN": "Kuchiki-taoshi",
     "nameJP": "朽木倒",
     "category": "Nage-waza",
@@ -864,7 +855,7 @@
     "difficulty": "Not graded"
   },
   {
-    "id": 97,
+    "id": 96,
     "nameEN": "Morote-gari",
     "nameJP": "双手刈",
     "category": "Nage-waza",
@@ -873,7 +864,7 @@
     "difficulty": "Not graded"
   },
   {
-    "id": 98,
+    "id": 97,
     "nameEN": "Obi-otoshi",
     "nameJP": "帯落",
     "category": "Nage-waza",
@@ -882,7 +873,7 @@
     "difficulty": "Not graded"
   },
   {
-    "id": 99,
+    "id": 98,
     "nameEN": "Sukui-nage",
     "nameJP": "掬投",
     "category": "Nage-waza",
@@ -891,7 +882,7 @@
     "difficulty": "Not graded"
   },
   {
-    "id": 100,
+    "id": 99,
     "nameEN": "Ashi-garami",
     "nameJP": "足緘",
     "category": "Ne-waza",
@@ -900,11 +891,11 @@
     "difficulty": "Not graded"
   },
   {
-    "id": 101,
+    "id": 100,
     "nameEN": "Do-jime",
     "nameJP": "胴絞",
     "category": "Ne-waza",
-    "description": "A body scissor choke. You wrap your legs around your opponent's torso and squeeze to compress their ribs and diaphragm.",
+    "description": "Trunk strangle / body scissor. You wrap your legs around your opponent's torso and squeeze to compress their chest and ribs.",
     "youtubeID": "D_0fFcoIbvY",
     "difficulty": "Not graded"
   }
