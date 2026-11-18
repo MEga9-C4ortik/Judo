@@ -1,4 +1,5 @@
 :root {
+
   /* Colour tokens. Named by ROLE (what the colour is for), not by component or by colour,
      so a dark theme can later override these same names. */
   --background: #f5f0e8;      /* page background */
@@ -20,11 +21,38 @@
   --shadow: rgba(0, 0, 0, 0.3);
 
   --belts-yellow: #f4d03f;
+  --belts-yellow-bg: rgba(244,208,63,0.18);
+  --belts-yellow-border: rgba(244,208,63,0.6);
+  --belts-yellow-text: #6b5410;
+
   --belts-orange: #e67e22;
+  --belts-orange-bg: rgba(230,126,34,0.12);
+  --belts-orange-border: rgba(230,126,34,0.5);
+  --belts-orange-text: #8a4a12;
+
   --belts-green: #58aa5c;
+  --belts-green-bg: rgba(88,170,92,0.12);
+  --belts-green-border: rgba(88,170,92,0.5);
+  --belts-green-text: #2d6b31;
+
   --belts-blue: #3d7dcb;
+  --belts-blue-bg: rgba(61,125,203,0.12);
+  --belts-blue-border: rgba(61,125,203,0.5);
+  --belts-blue-text: #2c5c96;
+
   --belts-brown: #8b5a2b;
+  --belts-brown-bg: rgba(139,90,43,0.12);
+  --belts-brown-border: rgba(139,90,43,0.5);
+  --belts-brown-text: #6b4520;
+
   --belts-black: #1c1c1c;
+  --belts-black-bg: rgba(28,28,28,0.08);
+  --belts-black-border: rgba(28,28,28,0.5);
+  --belts-black-text: #1C1C1C;
+
+  --belts-not-graded-bg: rgba(107,94,82,0.10);
+  --belts-not-graded-border: rgba(107,94,82,0.5);
+  --belts-not-graded-text: #6b5e52;
 
   /* Typography: restored unchanged from the Vite template, will be cleaned up in the next step */
   font: 18px/145% system-ui, 'Segoe UI', Roboto, sans-serif;

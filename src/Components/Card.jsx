@@ -1,13 +1,41 @@
 import styles from "./Card.module.css";
 
 const beltColors = {
-    Yellow:      { bg: "rgba(244,208,63,0.18)",  border: "rgba(244,208,63,0.6)",  text: "#6b5410" },
-    Orange:      { bg: "rgba(230,126,34,0.12)",  border: "rgba(230,126,34,0.5)", text: "#8a4a12" },
-    Green:       { bg: "rgba(88,170,92,0.12)",   border: "rgba(88,170,92,0.5)",  text: "#2d6b31" },
-    Blue:        { bg: "rgba(61,125,203,0.12)",  border: "rgba(61,125,203,0.5)", text: "#2c5c96" },
-    Brown:       { bg: "rgba(139,90,43,0.12)",   border: "rgba(139,90,43,0.5)",  text: "#6b4520" },
-    Black:       { bg: "rgba(28,28,28,0.08)",    border: "rgba(28,28,28,0.5)",    text: "#1C1C1C" },
-    "Not graded":{ bg: "rgba(107,94,82,0.10)",   border: "rgba(107,94,82,0.5)",  text: "#6b5e52" },
+    Yellow: {
+        bg: "var(--belts-yellow-bg)",
+        border: "var(--belts-yellow-border)",
+        text: "var(--belts-yellow-text)"
+    },
+    Orange: {
+        bg: "var(--belts-orange-bg)",
+        border: "var(--belts-orange-border)",
+        text: "var(--belts-orange-text)"
+    },
+    Green: {
+        bg: "var(--belts-green-bg)",
+        border: "var(--belts-green-border)",
+        text: "var(--belts-green-text)"
+    },
+    Blue: {
+        bg: "var(--belts-blue-bg)",
+        border: "var(--belts-blue-border)",
+        text: "var(--belts-blue-text)"
+    },
+    Brown: {
+        bg: "var(--belts-brown-bg)",
+        border: "var(--belts-brown-border)",
+        text: "var(--belts-brown-text)"
+    },
+    Black: {
+        bg: "var(--belts-black-bg)",
+        border: "var(--belts-black-border)",
+        text: "var(--belts-black-text)"
+    },
+    "Not graded": {
+        bg: "var(--belts-not-graded-bg)",
+        border: "var(--belts-not-graded-border)",
+        text: "var(--belts-not-graded-text)"
+    },
 };
 
 function Card({nameEN, nameJP, category, difficulty, description, youtubeID}) {
