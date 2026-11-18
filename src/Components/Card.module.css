@@ -1,17 +1,17 @@
 .card {
     display: flex;
     flex-direction: column;
-    background: #fff;
+    background: var(--surface);
     border-radius: 8px;
     overflow: hidden;
-    border: 1px solid #C0392B;
+    border: 1px solid var(--accent);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
-    border-left: 5px solid #C0392B;
+    box-shadow: 0 12px 32px var(--shadow);
+    border-left: 5px solid var(--accent);
 }
 
 .img {
@@ -36,7 +36,7 @@
 }
 
 .name p:first-child {
-    color: #1a1612;
+    color: var(--text);
     font-weight: 600;
     font-size: 22px;
     font-family: 'Noto Serif JP', serif;
@@ -44,7 +44,7 @@
 }
 
 .name p:last-child {
-    color: #514438;
+    color: var(--text-soft);
     font-size: 20px;
     font-family: 'Noto Serif JP', serif;
     letter-spacing: 2px;
@@ -60,10 +60,10 @@
 .category {
     display: inline-block;
     padding: 2px 12px;
-    background: rgba(192, 57, 43, 0.07);
-    border: 1px solid rgba(192, 57, 43, 0.35);
+    background: var(--accent-tint);
+    border: 1px solid var(--accent-border);
     border-radius: 999px;
-    color: #C0392B;
+    color: var(--accent);
     font-size: 16px;
     font-family: 'Noto Serif JP', serif;
     letter-spacing: 1px;
@@ -81,7 +81,7 @@
 }
 
 .description {
-    color: #6b5e52;
+    color: var(--text-muted);
     font-size: 15px;
     font-family: 'Noto Serif JP', serif;
     line-height: 1.75;
@@ -92,8 +92,8 @@
     display: inline-block;
     margin-top: 4px;
     padding: 6px 18px;
-    background: #C0392B;
-    color: #fff;
+    background: var(--accent);
+    color: var(--on-accent);
     border-radius: 999px;
     text-decoration: none;
     font-size: 16px;
@@ -102,6 +102,6 @@
 }
 
 .link:hover {
-    background: #a1291d;
+    background: var(--accent-hover);
     transform: translateY(-2px);
 }

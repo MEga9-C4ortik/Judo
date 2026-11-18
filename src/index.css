@@ -1,29 +1,35 @@
-
-
 :root {
-  --background: #f5f0e8;
-  --nav-bg: #fff;
-  --nav-logo: #c0392b;
-  --nav-menu-bg: #fff;
-  --nav-menu-color: #1a1612;
-  --burger: #1a1612;
+  /* Colour tokens. Named by ROLE (what the colour is for), not by component or by colour,
+     so a dark theme can later override these same names. */
+  --background: #f5f0e8;      /* page background */
+  --surface: #fff;            /* navbar, menus, inputs, cards, panels */
+  --text: #1a1612;            /* main text */
+  --text-soft: #514438;       /* secondary text (Japanese name) */
+  --text-muted: #6b5e52;      /* descriptions, labels */
+  --text-strong: #000;        /* strongest text (selected belt label) */
+  --border-strong: #000;      /* navbar underline */
+  --divider: #e8e0d5;         /* separators in the mobile menu */
 
-  --library-category-button: #6b5e52;
-  --library-category-button-hover: #c0392b;
-  --library-category-button-active: #fff;
-  --library-category-button-active-bg: #c0392b;
-  --library-category-button-active-border: #c0392b;
-  --library-search: #1a1612;
-  --library-search-bg: #fff;
-  --library-search-focus: #c0392b;
-  --library-search-focus-shadow: rgba(192, 57, 43, 0.15);
+  --accent: #c0392b;
+  --accent-hover: #a1291d;    /* darker accent for hover */
+  --on-accent: #fff;          /* text on an accent background */
+  --accent-tint: rgba(192, 57, 43, 0.07);
+  --accent-border: rgba(192, 57, 43, 0.35);
+  --accent-border-faint: rgba(192, 57, 43, 0.2);
+  --accent-ring: rgba(192, 57, 43, 0.15);
+  --shadow: rgba(0, 0, 0, 0.3);
 
-  --belts-yellow: #F4D03F;
-  --belts-orange: #E67E22;
-  --belts-green: #58AA5C;
-  --belts-blue: #3D7DCB;
-  --belts-brown: #8B5A2B;
-  --belts-black: #1C1C1C;
+  --belts-yellow: #f4d03f;
+  --belts-orange: #e67e22;
+  --belts-green: #58aa5c;
+  --belts-blue: #3d7dcb;
+  --belts-brown: #8b5a2b;
+  --belts-black: #1c1c1c;
+
+  /* Typography: restored unchanged from the Vite template, will be cleaned up in the next step */
+  font: 18px/145% system-ui, 'Segoe UI', Roboto, sans-serif;
+  letter-spacing: 0.18px;
+  color: var(--text);
 
   color-scheme: light;
   font-synthesis: none;
@@ -35,12 +41,19 @@
     font-size: 16px;
   }
 }
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
 body {
   background: var(--background);
+  margin: 0;
+}
+
+/* The app uses <p> as plain text blocks (card names, badges, description),
+   so the browser's default paragraph margins must stay off. */
+p {
   margin: 0;
 }
 
