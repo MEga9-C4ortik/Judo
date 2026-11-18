@@ -1,25 +1,31 @@
+
+
 :root {
-  --text: #6b6375;
-  --text-h: #08060d;
-  --bg: #fff;
-  --border: #e5e4e7;
-  --code-bg: #f4f3ec;
-  --accent: #aa3bff;
-  --accent-bg: rgba(170, 59, 255, 0.1);
-  --accent-border: rgba(170, 59, 255, 0.5);
-  --social-bg: rgba(244, 243, 236, 0.5);
-  --shadow:
-    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+  --background: #f5f0e8;
+  --nav-bg: #fff;
+  --nav-logo: #c0392b;
+  --nav-menu-bg: #fff;
+  --nav-menu-color: #1a1612;
+  --burger: #1a1612;
 
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --mono: ui-monospace, Consolas, monospace;
+  --library-category-button: #6b5e52;
+  --library-category-button-hover: #c0392b;
+  --library-category-button-active: #fff;
+  --library-category-button-active-bg: #c0392b;
+  --library-category-button-active-border: #c0392b;
+  --library-search: #1a1612;
+  --library-search-bg: #fff;
+  --library-search-focus: #c0392b;
+  --library-search-focus-shadow: rgba(192, 57, 43, 0.15);
 
-  font: 18px/145% var(--sans);
-  letter-spacing: 0.18px;
+  --belts-yellow: #F4D03F;
+  --belts-orange: #E67E22;
+  --belts-green: #58AA5C;
+  --belts-blue: #3D7DCB;
+  --belts-brown: #8B5A2B;
+  --belts-black: #1C1C1C;
+
   color-scheme: light;
-  color: var(--text);
-  background: var(--bg);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -29,13 +35,12 @@
     font-size: 16px;
   }
 }
-
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
 body {
-  background: #f5f0e8;
+  background: var(--background);
   margin: 0;
 }
 
@@ -47,40 +52,4 @@ body {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-}
-
-h1,
-h2 {
-  font-family: var(--heading);
-  font-weight: 500;
-  color: var(--text-h);
-}
-
-h1 {
-  font-size: 56px;
-  letter-spacing: -1.68px;
-  margin: 32px 0;
-  @media (max-width: 1024px) {
-    font-size: 36px;
-    margin: 20px 0;
-  }
-}
-h2 {
-  font-size: 24px;
-  line-height: 118%;
-  letter-spacing: -0.24px;
-  margin: 0 0 8px;
-  @media (max-width: 1024px) {
-    font-size: 20px;
-  }
-}
-p {
-  margin: 0;
-}
-
-code {
-  font-size: 15px;
-  line-height: 135%;
-  padding: 4px 8px;
-  background: var(--code-bg);
 }

@@ -3,7 +3,7 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
     padding: 0 20px;
-    margin: 20px 0 20px 0;
+    margin: 20px 0;
 }
 
 .controls {
@@ -28,7 +28,7 @@
     border-radius: 999px;
     border: 1px solid rgba(192, 57, 43, 0.35);
     background: transparent;
-    color: #6b5e52;
+    color: var(--library-category-button);
     font-family: 'Noto Serif JP', serif;
     font-size: 17px;
     cursor: pointer;
@@ -36,16 +36,16 @@
 }
 
 .btn:hover {
-    border-color: #C0392B;
-    color: #C0392B;
+    border-color: var(--library-category-button-hover);
+    color: var(--library-category-button-hover);
 }
 
 .active {
     padding: 6px 16px;
     border-radius: 999px;
-    border: 1px solid #C0392B;
-    background: #C0392B;
-    color: #fff;
+    border: 1px solid var(--library-category-button-active-border);
+    background: var(--library-category-button-active-bg);
+    color: var(--library-category-button-active);
     font-family: 'Noto Serif JP', serif;
     font-size: 17px;
     cursor: pointer;
@@ -56,18 +56,18 @@
     padding: 10px 16px;
     border-radius: 999px;
     border: 1px solid rgba(192, 57, 43, 0.35);
-    background: #fff;
+    background: var(--library-search-bg);
     font-family: 'Noto Serif JP', serif;
     font-size: 17px;
-    color: #1a1612;
+    color: var(--library-search);
     outline: none;
     width: 220px;
     transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .search:focus {
-    border-color: #C0392B;
-    box-shadow: 0 0 0 3px rgba(192, 57, 43, 0.15);
+    border-color: var(--library-search-focus);
+    box-shadow: 0 0 0 3px var(--library-search-focus-shadow);
 }
 
 .beltSlider {
@@ -78,12 +78,12 @@
     margin: 0;
     border-radius: 999px;
     background: linear-gradient(to right,
-    #F4D03F 0%, #F4D03F 16.67%,
-    #E67E22 16.67%, #E67E22 33.33%,
-    #58AA5C 33.33%, #58AA5C 50%,
-    #3D7DCB 50%, #3D7DCB 66.67%,
-    #8B5A2B 66.67%, #8B5A2B 83.33%,
-    #1C1C1C 83.33%, #1C1C1C 100%
+    var(--belts-yellow) 0%, var(--belts-yellow) 16.67%,
+    var(--belts-orange) 16.67%, var(--belts-orange) 33.33%,
+    var(--belts-green) 33.33%, var(--belts-green) 50%,
+    var(--belts-blue) 50%, var(--belts-blue) 66.67%,
+    var(--belts-brown), var(--belts-brown) 83.33%,
+    var(--belts-black), var(--belts-black) 100%
     );
     outline: none;
 }
@@ -93,12 +93,12 @@
     height: 8px;
     border-radius: 999px;
     background: linear-gradient(to right,
-    #F4D03F 0%, #F4D03F 16.67%,
-    #E67E22 16.67%, #E67E22 33.33%,
-    #58AA5C 33.33%, #58AA5C 50%,
-    #3D7DCB 50%, #3D7DCB 66.67%,
-    #8B5A2B 66.67%, #8B5A2B 83.33%,
-    #1C1C1C 83.33%, #1C1C1C 100%
+    var(--belts-yellow) 0%, var(--belts-yellow) 16.67%,
+    var(--belts-orange) 16.67%, var(--belts-orange) 33.33%,
+    var(--belts-green) 33.33%, var(--belts-green) 50%,
+    var(--belts-blue) 50%, var(--belts-blue) 66.67%,
+    var(--belts-brown), var(--belts-brown) 83.33%,
+    var(--belts-black), var(--belts-black) 100%
     );
 }
 
@@ -106,12 +106,12 @@
     height: 8px;
     border-radius: 999px;
     background: linear-gradient(to right,
-    #F4D03F 0%, #F4D03F 16.67%,
-    #E67E22 16.67%, #E67E22 33.33%,
-    #58AA5C 33.33%, #58AA5C 50%,
-    #3D7DCB 50%, #3D7DCB 66.67%,
-    #8B5A2B 66.67%, #8B5A2B 83.33%,
-    #1C1C1C 83.33%, #1C1C1C 100%
+    var(--belts-yellow) 0%, var(--belts-yellow) 16.67%,
+    var(--belts-orange) 16.67%, var(--belts-orange) 33.33%,
+    var(--belts-green) 33.33%, var(--belts-green) 50%,
+    var(--belts-blue) 50%, var(--belts-blue) 66.67%,
+    var(--belts-brown), var(--belts-brown) 83.33%,
+    var(--belts-black), var(--belts-black) 100%
     );
 }
 
