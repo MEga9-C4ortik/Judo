@@ -18,74 +18,89 @@
     text-decoration: none;
 }
 
+/* ---- Phone (default): burger button + dropdown menu ---- */
+
 .burger {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+}
+
+.burger span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--text);
+    border-radius: 2px;
 }
 
 .menu {
     display: flex;
-    gap: 32px;
+    flex-direction: column;
+    width: 100%;
+    background: var(--surface);
+    gap: 2px;
     list-style: none;
     margin: 0;
-    padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    padding: 12px 20px;
+    border-bottom: 1px solid var(--divider);
+    box-sizing: border-box;
+
+    transform: translateY(-6px);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu a {
     color: var(--text);
     text-decoration: none;
-    font-size: 20px;
+    font-size: 17px;
 }
 
-@media (max-width: 768px) {
+.menu.open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: all;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ---- Desktop (769px and up): no burger, menu is a plain row ----
+   Everything the phone menu needs for the dropdown is switched off here. */
+
+@media (min-width: 769px) {
     .burger {
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
+        display: none;
+    }
+
+    .menu,
+    .menu.open {
+        flex-direction: row;
+        width: auto;
         background: none;
-        border: none;
-        cursor: pointer;
-        padding: 4px;
-    }
-
-    .burger span {
-        display: block;
-        width: 24px;
-        height: 2px;
-        background: var(--text);
-        border-radius: 2px;
-    }
-
-    .menu {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        background: var(--surface);
-        gap: 2px;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        z-index: 99;
-        padding: 12px 20px;
-        border-bottom: 1px solid var(--divider);
-        box-sizing: border-box;
-
-        transform: translateY(-6px);
-        opacity: 0;
-        pointer-events: none;
-        transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
-        opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        gap: 32px;
+        position: static;
+        z-index: auto;
+        padding: 0;
+        border-bottom: none;
+        transform: none;
+        opacity: 1;
+        pointer-events: auto;
+        transition: none;
     }
 
     .menu a {
-        font-size: 17px;
-    }
-
-    .menu.open {
-        transform: translateY(0);
-        opacity: 1;
-        pointer-events: all;
-        transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
-        opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+        font-size: 20px;
     }
 }
