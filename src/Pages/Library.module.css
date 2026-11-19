@@ -25,6 +25,7 @@
 }
 
 .btn {
+    min-height: 44px;
     padding: 6px 16px;
     border-radius: 999px;
     border: 1px solid var(--accent-border);
@@ -35,12 +36,20 @@
     transition: all 0.2s ease;
 }
 
-.btn:hover {
+@media (hover: hover) {
+    .btn:hover {
+        border-color: var(--accent);
+        color: var(--accent);
+    }
+}
+
+.btn:active {
     border-color: var(--accent);
     color: var(--accent);
 }
 
 .active {
+    min-height: 44px;
     padding: 6px 16px;
     border-radius: 999px;
     border: 1px solid var(--accent);

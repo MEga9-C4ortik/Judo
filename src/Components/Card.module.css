@@ -8,10 +8,13 @@
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 32px var(--shadow);
-    border-left: 5px solid var(--accent);
+/* Hover only on devices that really have a mouse. The left stripe is a zero-blur shadow,
+   so unlike a growing border it does not change the box size and nothing jumps. */
+@media (hover: hover) {
+    .card:hover {
+        transform: translateY(-8px);
+        box-shadow: -4px 0 0 var(--accent), 0 12px 32px var(--shadow);
+    }
 }
 
 .img {
@@ -84,7 +87,9 @@
 }
 
 .link {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
     margin-top: 4px;
     padding: 6px 18px;
     background: var(--accent);
@@ -95,7 +100,13 @@
     transition: background 0.2s ease, transform 0.2s ease;
 }
 
-.link:hover {
+@media (hover: hover) {
+    .link:hover {
+        background: var(--accent-hover);
+        transform: translateY(-2px);
+    }
+}
+
+.link:active {
     background: var(--accent-hover);
-    transform: translateY(-2px);
 }
