@@ -1,5 +1,4 @@
 :root {
-
   /* Colour tokens. Named by ROLE (what the colour is for), not by component or by colour,
      so a dark theme can later override these same names. */
   --background: #f5f0e8;      /* page background */
@@ -10,6 +9,8 @@
   --text-strong: #000;        /* strongest text (selected belt label) */
   --border-strong: #000;      /* navbar underline */
   --divider: #e8e0d5;         /* separators in the mobile menu */
+  --font-body: 'Noto Serif JP', serif;  /* common font family*/
+
 
   --accent: #c0392b;
   --accent-hover: #a1291d;    /* darker accent for hover */
@@ -48,7 +49,7 @@
   --belts-black: #1c1c1c;
   --belts-black-bg: rgba(28,28,28,0.08);
   --belts-black-border: rgba(28,28,28,0.5);
-  --belts-black-text: #1C1C1C;
+  --belts-black-text: #1c1c1c;
 
   --belts-not-graded-bg: rgba(107,94,82,0.10);
   --belts-not-graded-border: rgba(107,94,82,0.5);
@@ -76,18 +77,27 @@
 
 body {
   background: var(--background);
+  font-family: var(--font-body), serif ;
   margin: 0;
 }
 
 /* The app uses <p> as plain text blocks (card names, badges, description),
    so the browser's default paragraph margins must stay off. */
 p {
+  font-family: inherit;
   margin: 0;
+}
+
+button {
+  font-family: inherit;
+}
+
+input, select, textarea {
+  font-family: inherit;
 }
 
 #root {
   width: 100%;
-  margin: 0 auto;
   text-align: center;
   min-height: 100svh;
   display: flex;
