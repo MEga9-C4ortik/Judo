@@ -77,14 +77,13 @@
 
 body {
   background: var(--background);
-  font-family: var(--font-body), serif ;
+  font-family: var(--font-body), serif;
   margin: 0;
 }
 
 /* The app uses <p> as plain text blocks (card names, badges, description),
    so the browser's default paragraph margins must stay off. */
 p {
-  font-family: inherit;
   margin: 0;
 }
 
