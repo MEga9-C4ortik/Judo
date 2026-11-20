@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+#Local stuff, aka pictures refernces, etc. that are not part of the project but are used for development purposes
+/local_stuff/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
