@@ -38,8 +38,8 @@ const beltColors = {
     },
 };
 
-function Card({nameEN, nameJP, category, difficulty, description, youtubeID}) {
-    const belt = beltColors[difficulty] || beltColors["Not graded"];
+function Card({nameEN, nameJP, category, beltLvl, description, youtubeID}) {
+    const belt = beltColors[beltLvl] || beltColors["Not graded"];
 
     return (
         <div className={styles.card}>
@@ -52,14 +52,14 @@ function Card({nameEN, nameJP, category, difficulty, description, youtubeID}) {
                 <div className={styles.badges}>
                     <p className={styles.category}> Category: {category}</p>
                     <p
-                        className={styles.difficulty}
+                        className={styles.beltLvl}
                         style={{
                             background: belt.bg,
                             borderColor: belt.border,
                             color: belt.text,
                         }}
                     >
-                        {difficulty}
+                        {beltLvl}
                     </p>
                 </div>
                 <p className={styles.description}> {description}</p>

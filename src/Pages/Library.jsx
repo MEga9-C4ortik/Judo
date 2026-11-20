@@ -14,7 +14,7 @@ function Library() {
 
     const beltNames = ["Yellow", "Orange", "Green", "Blue", "Brown", "Black"];
 
-    const diffChg = (beltStr) => {
+    const levelChg = (beltStr) => {
         switch (beltStr) {
             case "Yellow": return 1;
             case "Orange": return 2;
@@ -28,7 +28,7 @@ function Library() {
     const filtered = techniques
         .filter(t => !selectedCategory || t.category === selectedCategory)
         .filter(t => normalize(t.nameEN).includes(normalize(searchQuery)))
-        .filter(t => diffChg(t.difficulty) <= belt)
+        .filter(t => levelChg(t.beltLvl) <= belt)
     ;
 
     return (
@@ -84,7 +84,7 @@ function Library() {
                             nameEN={technique.nameEN}
                             nameJP={technique.nameJP}
                             category={technique.category}
-                            difficulty={technique.difficulty}
+                            beltLvl={technique.beltLvl}
                             description={technique.description}
                             youtubeID={technique.youtubeID}
                         />) :
