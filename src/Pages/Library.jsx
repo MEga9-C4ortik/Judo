@@ -1,5 +1,6 @@
 import techniques from "../Data/techniques.json";
 import styles from "./Library.module.css"
+import TechniqueItem from "../Components/TechniqueItem.jsx";
 import Card from "../Components/Card.jsx";
 import {useState} from "react";
 
@@ -79,7 +80,7 @@ function Library() {
             <div className={styles.Library}>
                 {(filtered.length > 0) ?
                     filtered.map(technique =>
-                        <Card
+                        <TechniqueItem
                             key={technique.id}
                             nameEN={technique.nameEN}
                             nameJP={technique.nameJP}
