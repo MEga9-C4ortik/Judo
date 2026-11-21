@@ -5,8 +5,8 @@ function TechniqueItem({ technique }) {
         <div className={styles.TechniqueItem}>
             <h2>{technique.nameEN}</h2>
             <h4>{technique.nameJP}</h4>
-            <p>{technique.category}</p>
-            <p>{technique.beltLvl}</p>
+            <p>Category: {technique.category}</p>
+            <p>Difficulty: {technique.difficulty}</p>
         </div>
     );
 }
