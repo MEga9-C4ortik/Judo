@@ -1,7 +1,6 @@
 import techniques from "../Data/techniques.json";
 import styles from "./Library.module.css"
 import TechniqueItem from "../Components/TechniqueItem.jsx";
-import Card from "../Components/Card.jsx";
 import {useState} from "react";
 
 function Library() {
@@ -82,12 +81,7 @@ function Library() {
                     filtered.map(technique =>
                         <TechniqueItem
                             key={technique.id}
-                            nameEN={technique.nameEN}
-                            nameJP={technique.nameJP}
-                            category={technique.category}
-                            beltLvl={technique.beltLvl}
-                            description={technique.description}
-                            youtubeID={technique.youtubeID}
+                            technique={technique}
                         />) :
                     <span className={styles.notFound}> Nothing found </span>}
             </div>

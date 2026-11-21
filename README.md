@@ -38,6 +38,6 @@ All techniques live in `src/Data/techniques.json`. Run `npm run validate` after 
 | `nameEN`      | Romanised Japanese name, e.g. `O-goshi`                                    |
 | `nameJP`      | Name in kanji                                                              |
 | `category`    | `Nage-waza` or `Ne-waza`                                                   |
-| `difficulty`  | `Yellow`, `Orange`, `Green`, `Blue`, `Brown`, `Black` or `Not graded`      |
+| `beltLvl`     | `Yellow`, `Orange`, `Green`, `Blue`, `Brown`, `Black` or `Not graded`      |
 | `description` | Short explanation of the technique                                         |
 | `youtubeID`   | 11-character YouTube video id                                              |
