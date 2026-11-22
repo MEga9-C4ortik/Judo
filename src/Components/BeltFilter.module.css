@@ -1,0 +1,137 @@
+/* Belt ribbon + caption + "include lower belts" switch. Structure (see BeltFilter.jsx):
+   section.filter > div.ribbon > button.belt > span.face   and   div.row > p.caption + label.toggle
+   The button keeps the 48px tap area; everything you see lives on .face,
+   so a 3D / shadow / pressed look can be added later in CSS only. */
+
+.filter {
+    padding: 0 16px;
+    margin: 0 0 8px;
+}
+
+.ribbon {
+    display: flex;
+    gap: 6px;
+}
+
+.belt {
+    flex: 1;
+    min-width: 0;
+    min-height: 48px;
+    padding: 0;
+    border: 0;
+    background: none;
+    font: inherit;
+    cursor: pointer;
+}
+
+.face {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 48px;
+    border: 1px solid var(--text);
+    background: var(--background);
+    color: var(--text);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+/* Belt colour, and the text colour that stays readable on it */
+.belt[data-belt="Yellow"] { --belt: var(--belts-yellow); --on-belt: var(--text); }
+.belt[data-belt="Orange"] { --belt: var(--belts-orange); --on-belt: var(--text); }
+.belt[data-belt="Green"]  { --belt: var(--belts-green);  --on-belt: var(--text); }
+.belt[data-belt="Blue"]   { --belt: var(--belts-blue);   --on-belt: var(--text); }
+.belt[data-belt="Brown"]  { --belt: var(--belts-brown);  --on-belt: var(--background); }
+.belt[data-belt="Black"]  { --belt: var(--belts-black);  --on-belt: var(--background); }
+
+/* off = outlined with a colour strip, included/selected = filled with the belt colour */
+.belt[data-state="off"] .face {
+    border-bottom: 7px solid var(--belt);
+}
+
+.belt[data-state="included"] .face,
+.belt[data-state="selected"] .face {
+    background: var(--belt);
+    color: var(--on-belt);
+}
+
+.belt[data-state="selected"] .face {
+    border-width: 2px;
+}
+
+.belt:disabled {
+    cursor: default;
+}
+
+.belt:disabled .face {
+    opacity: 0.45;
+}
+
+.belt:not(:disabled):active .face {
+    transform: translateY(1px);
+}
+
+.belt:focus-visible .face,
+.toggle input:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+}
+
+@media (hover: hover) {
+    .belt:not(:disabled):hover .face {
+        transform: translateY(-2px);
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .face {
+        transition: transform 0.15s ease;
+    }
+}
+
+/* ---- Caption and switch ---- */
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 4px;
+}
+
+.caption {
+    margin: 0;
+    font-size: 16px;
+    color: var(--text);
+}
+
+.toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 44px;
+    font-size: 14px;
+    color: var(--text-muted);
+    cursor: pointer;
+}
+
+.toggle input {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    accent-color: var(--accent);
+}
+
+.toggle input:disabled,
+.toggle input:disabled + span {
+    opacity: 0.45;
+    cursor: default;
+}
+
+@media (min-width: 561px) {
+    .filter {
+        padding: 0 20px;
+    }
+}
