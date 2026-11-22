@@ -1,9 +1,13 @@
 .Library {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
-    gap: 25px;
     padding: 16px;
     margin: 20px 0;
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-top: 1px solid var(--divider);
 }
 
 .controls {
@@ -172,7 +176,8 @@
 }
 
 .notFound {
-    grid-column: 1 / -1;
+    display: block;
+    margin: 0;
     text-align: center;
     padding: 60px 20px;
     font-size: 38px;

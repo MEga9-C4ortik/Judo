@@ -78,12 +78,16 @@ function Library() {
 
             <div className={styles.Library}>
                 {(filtered.length > 0) ?
-                    filtered.map(technique =>
+                <ul className={styles.techniquesList} role="list">
+                    {filtered.map(technique =>
                         <TechniqueItem
                             key={technique.id}
                             technique={technique}
-                        />) :
-                    <span className={styles.notFound}> Nothing found </span>}
+                        />)
+                    }
+                </ul> 
+                :
+                <span className={styles.notFound}> Nothing found </span>}
             </div>
         </>
     );
