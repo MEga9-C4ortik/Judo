@@ -36,18 +36,23 @@ export default function TechniqueItem({ technique }) {
                         target="_blank" rel="noopener noreferrer"
                         aria-label={`Youtube Link: ${technique.nameEN}`}
                     >
-                        <img src={technique.image} alt={technique.nameEN} />
+                        <img 
+                            src="https://img.youtube.com/vi/${technique.   youtubeID}/hqdefault.jpg"
+                            loading="lazy"
+                            decoding="async"
+                            alt="" 
+                        />
+                        <span className={styles.play}>
+                            <svg 
+                                viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M8 5l11 7-11 7z"                   fill="currentColor"
+                                />
+                            </svg>
+                        </span>
                     </a>
                     <p className={styles.description}> 
                         {technique.description} 
                     </p>
-                    
-                    <span className={styles.play}>
-                        
-                        <svg 
-                            viewBox="0 0 24 24"><path d="M8 5l11 7-11 7z" fill="currentColor" />
-                        </svg>
-                    </span>
                 </div>
             </details>
         </li>
