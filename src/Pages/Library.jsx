@@ -78,7 +78,7 @@ function Library() {
 
             <div className={styles.Library}>
                 {(filtered.length > 0) ?
-                <ul className={styles.techniquesList} role="list">
+                <ul className={styles.list} role="list">
                     {filtered.map(technique =>
                         <TechniqueItem
                             key={technique.id}
