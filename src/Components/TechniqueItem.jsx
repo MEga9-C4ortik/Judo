@@ -37,7 +37,7 @@ export default function TechniqueItem({ technique }) {
                         aria-label={`Youtube Link: ${technique.nameEN}`}
                     >
                         <img 
-                            src="https://img.youtube.com/vi/${technique.   youtubeID}/hqdefault.jpg"
+                            src={`https://img.youtube.com/vi/${technique.youtubeID}/hqdefault.jpg`}
                             loading="lazy"
                             decoding="async"
                             alt="" 
