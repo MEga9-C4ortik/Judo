@@ -20,7 +20,7 @@ const byName = (q) => visible.filter((t) => norm(t.nameEN).includes(norm(q)))
 async function main() {
   let BELTS, filterTechniques
   try {
-    const belts = await import('../src/belts.js')
+    const belts = await import('../src/Data/belts.js')
     const lib = await import('../src/lib/filterTechniques.js')
     BELTS = belts.BELTS
     filterTechniques = lib.filterTechniques

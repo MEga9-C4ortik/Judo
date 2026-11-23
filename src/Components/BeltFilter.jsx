@@ -5,8 +5,8 @@ export default function BeltFilter({ beltLvl, onChange }) {
         <section className={styles.filter} aria-label="Belt Level">
             <div className={styles.ribbon} role="group" aria-label="Belt">
                 <button type="button" data-belt={name} data-state={}
-                        aria-pressed={i === beltIndex} aria-label="{name} belt"
-                        disabled={searching}  onClick → onBeltChange(i)
+                        aria-pressed={i === beltIndex} aria-label=`{name} belt`
+                        disabled={searching}  onClick={() => onBeltChange(i)}
                 >
                     <span className={styles.face}>{kanji}</span>
                 </button>
