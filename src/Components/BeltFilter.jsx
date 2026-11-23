@@ -2,26 +2,26 @@ import styles from './BeltFilter.module.css';
 
 export default function BeltFilter({ beltLvl, onChange }) {
     return (
-        <div className={styles.filter}>
-            <label htmlFor="beltFilter" className={styles.label}>
-                Filter by Belt Level:
-            </label>
-            <select
-                id="beltFilter"
-                value={beltLvl}
-                onChange={onChange}
-                className={styles.select}
-            >
-                <option value="">All Levels</option>
-                <option value="white">White</option>
-                <option value="yellow">Yellow</option>
-                <option value="orange">Orange</option>
-                <option value="green">Green</option>
-                <option value="blue">Blue</option>
-                <option value="purple">Purple</option>
-                <option value="brown">Brown</option>
-                <option value="black">Black</option>
-            </select>
-        </div>
+        <section className={styles.filter} aria-label="Belt Level">
+            <div className={styles.ribbon} role="group" aria-label="Belt">
+                <button type="button" data-belt={name} data-state={}
+                        aria-pressed={i === beltIndex} aria-label="{name} belt"
+                        disabled={searching}  onClick → onBeltChange(i)
+                >
+                    <span className={styles.face}>{kanji}</span>
+                </button>
+            </div>
+
+            <div className={styles.row}>
+                <p className={styles.caption}>
+
+                </p>
+
+                <label className={styles.toggle}>
+                    <input type={"checkbox"} checked={includeLower} disabled={searching}></input>
+                    <span> Include other belts</span>
+                </label>
+            </div>
+        </section>
     );
 }
