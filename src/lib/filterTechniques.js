@@ -18,11 +18,11 @@ export function filterTechniques(techniques, { query, category, beltIndex, inclu
             return false;
         }
 
-        // lower rank check with BELTS index
-        // with final return if all previous checks are passed
+        // lower rank check with BELTS index(which is int)
         if (includeLower) {
             return rank <= beltIndex;
         }
+        // final return if all previous checks are passed
         return rank === beltIndex;
     });
 }
