@@ -1,12 +1,27 @@
-import BELTS from '../Data/belts.js'
+import {BELTS} from '../Data/belts.js'
 
 export function filterTechniques(techniques, { query, category, beltIndex, includeLower }) {
-    techniques = techniques
-        .filter((technique) => (technique.category == category || !category)
-            || (includeLower && BELTS.indexOf(technique.beltLvl) <= beltIndex)
-            || (!includeLower && BELTS.indexOf(technique.beltLvl) === beltIndex)
-            || (technique => technique.nameEN === query))
-        
+    return techniques.filter((technique) => {
+        // ranking technique by belt, -1 means wrong level of technique
+        const rank = BELTS.findIndex((belt) => belt.name === technique.beltLvl);
+        if (rank === -1) {
+            return false;
+        }
 
-    return techniques;
+        // category is selected and doesnt match the technique category
+        if (category && technique.category !== category) {
+            return false;
+        }
+
+        // if there is a text -> return
+        if (query) {
+            return technique.nameEN.includes(query);
+        }
+
+        // lower rank check with BELTS index
+        if (includeLower) {
+            return rank <= beltIndex;
+        }
+        return rank === beltIndex;
+    });
 }
