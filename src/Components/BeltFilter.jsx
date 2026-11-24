@@ -1,24 +1,51 @@
+import { BELTS } from "../Data/belts.js";
 import styles from './BeltFilter.module.css';
 
-export default function BeltFilter({ beltLvl, onChange }) {
+export default function BeltFilter({ beltIndex, onBeltChange, includeLower, onIncludeLowerChange, count, searching }) {
+    const currentBelt = BELTS[beltIndex];
+    const getState = (i) => {
+        if (i === beltIndex) return 'selected';
+        if (includeLower && i < beltIndex) return 'included';
+        return 'off';
+    };
+
     return (
         <section className={styles.filter} aria-label="Belt Level">
             <div className={styles.ribbon} role="group" aria-label="Belt">
-                <button type="button" data-belt={name} data-state={}
-                        aria-pressed={i === beltIndex} aria-label=`{name} belt`
-                        disabled={searching}  onClick={() => onBeltChange(i)}
-                >
-                    <span className={styles.face}>{kanji}</span>
-                </button>
+                {BELTS.map((belt, i) => {
+                    const state = getState(i);
+                    return (
+                        <button
+                            key={belt.name ?? i}
+                            type="button"
+                            className={styles.belt}
+                            data-belt={belt.name}
+                            data-state={state}
+                            aria-pressed={i === beltIndex}
+                            aria-label={`${belt.name} belt`}
+                            disabled={searching}
+                            onClick={() => onBeltChange(i)}
+                        >
+                            <span className={styles.face}>{belt.kanji}</span>
+                        </button>
+                    );
+                })}
             </div>
 
             <div className={styles.row}>
                 <p className={styles.caption}>
-
+                    {searching
+                        ? `${count} results in all belts`
+                        : `${currentBelt?.name ?? ''} · ${count} techniques`}
                 </p>
 
                 <label className={styles.toggle}>
-                    <input type={"checkbox"} checked={includeLower} disabled={searching}></input>
+                    <input
+                        type="checkbox"
+                        checked={includeLower}
+                        disabled={searching}
+                        onChange={ (e) => onIncludeLowerChange(e.target.checked)}
+                    />
                     <span> Include other belts</span>
                 </label>
             </div>

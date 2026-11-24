@@ -9,8 +9,7 @@ function Library() {
     const [belt, setBelt] = useState(6);
     const categories = [...new Set(techniques.map(t => t.category))];
 
-    const normalize = (str) =>
-        str.toLowerCase().replace(/[\s-]/g, "");
+
 
     const beltNames = ["Yellow", "Orange", "Green", "Blue", "Brown", "Black"];
 
@@ -24,12 +23,6 @@ function Library() {
             case "Black": return 6;
         }
     }
-
-    const filtered = techniques
-        .filter(t => !selectedCategory || t.category === selectedCategory)
-        .filter(t => normalize(t.nameEN).includes(normalize(searchQuery)))
-        .filter(t => levelChg(t.beltLvl) <= belt)
-    ;
 
     return (
         <>
