@@ -1,44 +1,44 @@
 import techniques from "../Data/techniques.json";
 import styles from "./Library.module.css"
+import BeltFilter from "../Components/BeltFilter.jsx";
+import {filterTechniques} from "../lib/filterTechniques.js";
 import TechniqueItem from "../Components/TechniqueItem.jsx";
 import {useState} from "react";
 
 function Library() {
     const [selectedCategory, setCategory] = useState("");
     const [searchQuery, setSearchQuery] = useState("");
-    const [belt, setBelt] = useState(6);
-    const categories = [...new Set(techniques.map(t => t.category))];
+    const [beltIndex, setBeltIndex] = useState(5);
+    const [includeLower, setIncludeLower] = useState(true);
 
-
-
-    const beltNames = ["Yellow", "Orange", "Green", "Blue", "Brown", "Black"];
-
-    const levelChg = (beltStr) => {
-        switch (beltStr) {
-            case "Yellow": return 1;
-            case "Orange": return 2;
-            case "Green": return 3;
-            case "Blue": return 4;
-            case "Brown": return 5;
-            case "Black": return 6;
-        }
-    }
+    const categories = [...new Set(techniques.map((t) => t.category))];
+    const searching = Boolean(normalize(searchQuery));
+    const filtered = filterTechniques(techniques, {
+        query: searchQuery,
+        category: selectedCategory,
+        beltIndex,
+        includeLower,
+    });
 
     return (
         <>
             <div className={styles.controls}>
                 <div className={styles.filters}>
-                    <button className={selectedCategory === "" ? styles.active : styles.btn}
-                            aria-pressed={selectedCategory === ""}
-                            onClick={() => setCategory("")}>
+                    <button
+                        className={selectedCategory === "" ? styles.active : styles.btn}
+                        aria-pressed={selectedCategory === ""}
+                        onClick={() => setCategory("")}
+                    >
                         All
                     </button>
 
                     {categories.map(t =>
-                        <button className={selectedCategory === t ? styles.active : styles.btn}
-                                key={t}
-                                aria-pressed={selectedCategory === t}
-                                onClick={() => setCategory(t)}>
+                        <button
+                            className={selectedCategory === t ? styles.active : styles.btn}
+                            key={t}
+                            aria-pressed={selectedCategory === t}
+                            onClick={() => setCategory(t)}
+                        >
                             {t}
                         </button>
                     )}
@@ -50,37 +50,32 @@ function Library() {
                     placeholder="Search technique..."
                     aria-label="Search techniques"
                     value={searchQuery}
-                    onChange={e => setSearchQuery(e.target.value)}
+                    onChange={(e) => setSearchQuery(e.target.value)}
                 />
             </div>
 
-            <div className={styles.beltFilter}>
-                <div className={styles.beltFilterHeader}>
-                    <span className={styles.beltFilterLabel}>Show techniques up to</span>
-                    <span className={styles.beltFilterValue}>{beltNames[belt - 1]}</span>
-                </div>
-                <input className={styles.beltSlider}
-                       type="range"
-                       min={1}
-                       max={6}
-                       value={belt}
-                       onChange={e => setBelt(e.target.value)}
-                       aria-label="Filter by belt level"
-                />
-            </div>
+            <BeltFilter
+                beltIndex={beltIndex}
+                onBeltChange={setBeltIndex}
+                includeLower={includeLower}
+                onIncludeLowerChange={setIncludeLower}
+                count={filtered.length}
+                searching={searching}
+            />
 
             <div className={styles.Library}>
                 {(filtered.length > 0) ?
-                <ul className={styles.list} role="list">
-                    {filtered.map(technique =>
-                        <TechniqueItem
-                            key={technique.id}
-                            technique={technique}
-                        />)
-                    }
-                </ul> 
-                :
-                <span className={styles.notFound}> Nothing found </span>}
+                    <ul className={styles.list} role="list">
+                        {filtered.map(technique =>
+                            <TechniqueItem
+                                key={technique.id}
+                                technique={technique}
+                            />
+                        )}
+                    </ul>
+                    :
+                    <span className={styles.notFound}> Nothing found </span>
+                }
             </div>
         </>
     );
