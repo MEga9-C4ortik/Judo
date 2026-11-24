@@ -14,9 +14,17 @@ export function filterTechniques(techniques, { query, category, beltIndex, inclu
         }
 
         // if there is a text which doesnt match the technique name -> false
+        // varation with belt filter higher than name priority
         if (query && !technique.nameEN?.includes(query)) {
             return false;
         }
+
+        /* 
+        // variation with name priotiy higher than belt filter
+        if (query) {
+            return technique.nameEN.includes(query);
+        }       
+        */
 
         // lower rank check with BELTS index(which is int)
         if (includeLower) {
