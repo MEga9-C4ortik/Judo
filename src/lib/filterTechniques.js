@@ -1,5 +1,9 @@
 import {BELTS} from '../Data/belts.js'
 
+function normalize(value) {
+    return String(value ?? '').trim().toLowerCase();
+}
+
 export function filterTechniques(techniques, { query, category, beltIndex, includeLower }) {
     return techniques.filter((technique) => {
         // ranking technique by belt, -1 means wrong/unexpected level of technique
@@ -15,7 +19,7 @@ export function filterTechniques(techniques, { query, category, beltIndex, inclu
 
         // if there is a text which doesnt match the technique name -> false
         // varation with belt filter higher than name priority
-        if (query && !technique.nameEN?.includes(query)) {
+        if (query && !normalize(technique.nameEN?).includes(query)) {
             return false;
         }
 
