@@ -23,7 +23,6 @@ export default function BeltFilter({ beltIndex, onBeltChange, includeLower, onIn
                             data-state={state}
                             aria-pressed={i === beltIndex}
                             aria-label={`${belt.name} belt`}
-                            disabled={searching}
                             onClick={() => onBeltChange(i)}
                         >
                             <span className={styles.face}>{belt.kanji}</span>
@@ -36,14 +35,16 @@ export default function BeltFilter({ beltIndex, onBeltChange, includeLower, onIn
                 <p className={styles.caption}>
                     {searching
                         ? `${count} results in all belts`
-                        : `${currentBelt?.name ?? ''} · ${count} techniques`}
+                        : includeLower
+                            ? `${currentBelt?.name ?? ''} & lower · ${count} techniques`
+                            : `${currentBelt?.name ?? ''} · ${count} techniques`
+                    }
                 </p>
 
                 <label className={styles.toggle}>
                     <input
                         type="checkbox"
                         checked={includeLower}
-                        disabled={searching}
                         onChange={ (e) => onIncludeLowerChange(e.target.checked)}
                     />
                     <span> Include other belts</span>

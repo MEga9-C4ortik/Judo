@@ -1,7 +1,7 @@
 import techniques from "../Data/techniques.json";
 import styles from "./Library.module.css"
 import BeltFilter from "../Components/BeltFilter.jsx";
-import {filterTechniques} from "../lib/filterTechniques.js";
+import { filterTechniques, normalize } from "../lib/filterTechniques.js";
 import TechniqueItem from "../Components/TechniqueItem.jsx";
 import {useState} from "react";
 
