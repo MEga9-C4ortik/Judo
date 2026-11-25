@@ -1,10 +1,11 @@
 import {BELTS} from '../Data/belts.js'
 
-function normalize(value) {
-    return String(value ?? '').trim().toLowerCase();
+export function normalize(value) {
+    return String(value ?? '').toLowerCase().replace(/[\s-]/g, '');
 }
 
 export function filterTechniques(techniques, { query, category, beltIndex, includeLower }) {
+    const q = normalize(query);
     return techniques.filter((technique) => {
         // ranking technique by belt, -1 means wrong/unexpected level of technique
         const rank = BELTS.findIndex((belt) => belt.name === technique.beltLvl);
@@ -19,14 +20,14 @@ export function filterTechniques(techniques, { query, category, beltIndex, inclu
 
         // if there is a text which doesnt match the technique name -> false
         // varation with belt filter higher than name priority
-        if (query && !normalize(technique.nameEN).includes(query)) {
+        if (q && !technique.nameEN?.includes(q)) {
             return false;
         }
 
         /* 
         // variation with name priotiy higher than belt filter
-        if (query) {
-            return technique.nameEN.includes(query);
+        if (q) {
+            return technique.nameEN.includes(q);
         }       
         */
 
