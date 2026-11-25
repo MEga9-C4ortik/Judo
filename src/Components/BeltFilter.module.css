@@ -103,13 +103,14 @@
 
 .caption {
     margin: 0;
+    text-align: left;
     font-size: 16px;
     color: var(--text);
 }
 
 .toggle {
     display: inline-flex;
-    align-items: center;
+    text-align: right;
     gap: 8px;
     min-height: 44px;
     font-size: 14px;
@@ -118,9 +119,10 @@
 }
 
 .toggle input {
+    justify-self: end;
     width: 20px;
     height: 20px;
-    margin: 0;
+    margin: 4px 0;
     accent-color: var(--accent);
 }
 

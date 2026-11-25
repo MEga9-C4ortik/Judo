@@ -36,8 +36,8 @@ export default function BeltFilter({ beltIndex, onBeltChange, includeLower, onIn
                     {searching
                         ? `${count} results in all belts`
                         : includeLower
-                            ? `${currentBelt?.name ?? ''} & lower · ${count} techniques`
-                            : `${currentBelt?.name ?? ''} · ${count} techniques`
+                            ? `${currentBelt?.name ?? ''} & lower: ${count} techniques`
+                            : `${currentBelt?.name ?? ''}: ${count} techniques`
                     }
                 </p>
 
