@@ -20,7 +20,7 @@ export function filterTechniques(techniques, { query, category, beltIndex, inclu
 
         // if there is a text which doesnt match the technique name -> false
         // varation with belt filter higher than name priority
-        if (q && !technique.nameEN?.includes(q)) {
+        if (q && !normalize(technique.nameEN).includes(q)) {
             return false;
         }
 

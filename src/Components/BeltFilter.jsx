@@ -33,12 +33,12 @@ export default function BeltFilter({ beltIndex, onBeltChange, includeLower, onIn
 
             <div className={styles.row}>
                 <p className={styles.caption}>
-                    {searching
-                        ? `${count} results in all belts`
-                        : includeLower
-                            ? `${currentBelt?.name ?? ''} & lower: ${count} techniques`
-                            : `${currentBelt?.name ?? ''}: ${count} techniques`
-                    }
+                    <span className={styles.captionTitle}>
+                        {currentBelt?.name ?? ''}{includeLower ? ' & lower' : ''}
+                    </span>
+                    <span className={styles.captionCount}>
+                        {count} {searching ? 'results' : 'techniques'}
+                    </span>
                 </p>
 
                 <label className={styles.toggle}>

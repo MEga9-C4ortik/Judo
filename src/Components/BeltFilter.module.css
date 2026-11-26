@@ -1,5 +1,5 @@
 /* Belt ribbon + caption + "include lower belts" switch. Structure (see BeltFilter.jsx):
-   section.filter > div.ribbon > button.belt > span.face   and   div.row > p.caption + label.toggle
+   section.filter > div.ribbon > button.belt > span.face   and   div.row > p.caption (span.captionTitle + span.captionCount) + label.toggle
    The button keeps the 48px tap area; everything you see lives on .face,
    so a 3D / shadow / pressed look can be added later in CSS only. */
 
@@ -11,6 +11,7 @@
 .ribbon {
     display: flex;
     gap: 6px;
+    padding-bottom: 4px; /* room for the 3px shadow under the keys */
 }
 
 .belt {
@@ -36,6 +37,7 @@
     font-size: 24px;
     font-weight: 600;
     line-height: 1;
+    box-shadow: 0 3px 0 var(--text); /* hard ink shadow: the key stands up */
 }
 
 /* Belt colour, and the text colour that stays readable on it */
@@ -57,8 +59,11 @@
     color: var(--on-belt);
 }
 
+/* the chosen belt is pressed down into the page */
 .belt[data-state="selected"] .face {
     border-width: 2px;
+    transform: translateY(3px);
+    box-shadow: 0 0 0 var(--text);
 }
 
 .belt:disabled {
@@ -67,10 +72,12 @@
 
 .belt:disabled .face {
     opacity: 0.45;
+    box-shadow: none;
 }
 
 .belt:not(:disabled):active .face {
-    transform: translateY(1px);
+    transform: translateY(3px);
+    box-shadow: 0 0 0 var(--text);
 }
 
 .belt:focus-visible .face,
@@ -80,14 +87,15 @@
 }
 
 @media (hover: hover) {
-    .belt:not(:disabled):hover .face {
-        transform: translateY(-2px);
+    .belt:not(:disabled):not([data-state="selected"]):hover .face {
+        transform: translateY(-1px);
+        box-shadow: 0 4px 0 var(--text);
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
     .face {
-        transition: transform 0.15s ease;
+        transition: transform 0.12s ease, box-shadow 0.12s ease;
     }
 }
 
@@ -98,31 +106,58 @@
     align-items: center;
     justify-content: space-between;
     gap: 12px;
+    min-height: 44px; /* the row never changes height, whatever the text says */
     margin-top: 4px;
 }
 
+/* Two fixed lines: belt name and count. Neither can wrap, so nothing below moves. */
 .caption {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 0;
+    min-height: 44px;
     margin: 0;
     text-align: left;
-    font-size: 16px;
     color: var(--text);
+    font-variant-numeric: tabular-nums;
 }
 
+.captionTitle {
+    overflow: hidden;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.3;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.captionCount {
+    font-size: 14px;
+    line-height: 1.3;
+    color: var(--text-muted);
+    white-space: nowrap;
+}
+
+/* The switch keeps its own size and stays glued to the right edge */
 .toggle {
     display: inline-flex;
-    text-align: right;
+    flex: none;
+    align-items: center;
     gap: 8px;
     min-height: 44px;
     font-size: 14px;
     color: var(--text-muted);
+    white-space: nowrap;
     cursor: pointer;
 }
 
 .toggle input {
-    justify-self: end;
+    flex: none;
     width: 20px;
     height: 20px;
-    margin: 4px 0;
+    margin: 0;
     accent-color: var(--accent);
 }
 

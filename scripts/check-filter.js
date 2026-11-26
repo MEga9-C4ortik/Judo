@@ -52,8 +52,9 @@ async function main() {
   })
 
   ;['kata', 'goshi', 'gatame', 'O-GOSHI'].forEach((q) => {
-    test(`search "${q}" ignores the belt settings`, () =>
-      [[0, false], [2, false], [2, true], [5, true]].every(([beltIndex, includeLower]) => compare(f({ query: q, beltIndex, includeLower }), byName(q)) === true))
+    test(`search "${q}" is applied together with the belt rules`, () =>
+      [[0, false], [2, false], [2, true], [5, true]].every(([beltIndex, includeLower]) =>
+        compare(f({ query: q, beltIndex, includeLower }), byName(q).filter((t) => (includeLower ? rank(t) <= beltIndex : rank(t) === beltIndex))) === true))
   })
 
   test('search is case-, space- and hyphen-insensitive', () => {
