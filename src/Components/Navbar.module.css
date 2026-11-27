@@ -95,7 +95,7 @@
 
 @media (min-width: 769px) {
     .logo img {
-        height: 40px;
+        height: 17vh;
     }
 
     .burger {
@@ -121,11 +121,5 @@
     .menu a {
         padding: 0;
         font-size: 20px;
-    }
-}
-
-@media (min-width: 1024px) {
-    .logo img {
-        height: 17vh;
     }
 }
