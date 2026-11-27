@@ -6,7 +6,7 @@ import process from 'node:process'
 const FILE = new URL('../src/Data/techniques.json', import.meta.url)
 const CATEGORIES = ['Nage-waza', 'Ne-waza']
 const BELTS = ['Yellow', 'Orange', 'Green', 'Blue', 'Brown', 'Black', 'Not graded']
-const TEXT_FIELDS = ['nameEN', 'nameJP', 'category', 'difficulty', 'description', 'youtubeID']
+const TEXT_FIELDS = ['nameEN', 'nameJP', 'category', 'beltLvl', 'description', 'youtubeID']
 
 // Same idea as normalize() in Library.jsx: names the search treats as equal count as duplicates.
 const normalize = (s) => s.toLowerCase().replace(/[\s-]/g, '')
@@ -47,7 +47,7 @@ techniques.forEach((t, i) => {
   }
 
   if (!CATEGORIES.includes(t.category)) errors.push(`${label}: unknown category "${t.category}"`)
-  if (!BELTS.includes(t.difficulty)) errors.push(`${label}: unknown difficulty "${t.difficulty}"`)
+  if (!BELTS.includes(t.beltLvl)) errors.push(`${label}: unknown beltLvl "${t.beltLvl}"`)
   if (typeof t.youtubeID === 'string' && !/^[\w-]{11}$/.test(t.youtubeID)) {
     errors.push(`${label}: "youtubeID" must be 11 characters of A-Z a-z 0-9 _ -`)
   }

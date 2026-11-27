@@ -2,15 +2,59 @@ import styles from './TechniqueItem.module.css';
 
 export default function TechniqueItem({ technique }) {
     return (
-        <div className={styles.TechniqueItem}>
-            <h2>{technique.nameEN}</h2>
-            <h4>{technique.nameJP}</h4>
-            <p>{technique.category}</p>
-            <p>{technique.beltLvl}</p>
+        <li className={styles.item}>
+            <details className={styles.details}> 
+                <summary className={styles.header}>
+                    <span className={styles.dot} 
+                        data-belt={technique.beltLvl} 
+                        aria-hidden="true">
+                    </span>
 
-            <a className={styles.link} href={`https://www.youtube.com/watch?v=${technique.youtubeID}`} target="_blank" rel="noopener noreferrer" aria-label={`Youtube Link: ${technique.nameEN}`}>
+                    <span className={styles.text}>
+                        <span className={styles.nameEN}> 
+                            {technique.nameEN} 
+                        </span>
 
-            </a>
-        </div>
+                        <span className={styles.nameJP} lang="ja"> 
+                            {technique.nameJP} 
+                        </span>
+                    </span>
+
+                    <svg className={styles.chevron} 
+                            viewBox="0 0 20 20" 
+                            aria-hidden="true"
+                        >
+                            <path 
+                                d="M5 8l5 5 5-5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                </summary> 
+
+                <div className={styles.panel}>
+                    <a className={styles.thumb}
+                        href={
+                        `https://www.youtube.com/watch?v=${technique.youtubeID}`}
+                        target="_blank" rel="noopener noreferrer"
+                        aria-label={`Youtube Link: ${technique.nameEN}`}
+                    >
+                        <img 
+                            src={`https://img.youtube.com/vi/${technique.youtubeID}/hqdefault.jpg`}
+                            loading="lazy"
+                            decoding="async"
+                            alt="" 
+                        />
+                        <span className={styles.play}>
+                            <svg 
+                                viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M8 5l11 7-11 7z"                   fill="currentColor"
+                                />
+                            </svg>
+                        </span>
+                    </a>
+                    <p className={styles.description}> 
+                        {technique.description} 
+                    </p>
+                </div>
+            </details>
+        </li>
     );
 }
