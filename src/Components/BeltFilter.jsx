@@ -47,7 +47,7 @@ export default function BeltFilter({ beltIndex, onBeltChange, includeLower, onIn
                         checked={includeLower}
                         onChange={ (e) => onIncludeLowerChange(e.target.checked)}
                     />
-                    <span> Include other belts</span>
+                    <span> Include lower belts</span>
                 </label>
             </div>
         </section>

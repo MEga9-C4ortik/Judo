@@ -12,13 +12,21 @@
     z-index: 120;
 }
 
+/* ---- Phone (default): burger button + dropdown menu ---- */
 .logo {
-    font-size: 40px;
-    color: var(--accent);
+    display: inline-flex;
+    align-items: center;
+    flex-shrink: 0;
     text-decoration: none;
 }
 
-/* ---- Phone (default): burger button + dropdown menu ---- */
+.logo img {
+    display: block;
+    height: 32px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
 
 .burger {
     display: flex;
@@ -86,6 +94,10 @@
    Everything the phone menu needs for the dropdown is switched off here. */
 
 @media (min-width: 769px) {
+    .logo img {
+        height: 40px;
+    }
+
     .burger {
         display: none;
     }
@@ -109,5 +121,11 @@
     .menu a {
         padding: 0;
         font-size: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .logo img {
+        height: 17vh;
     }
 }

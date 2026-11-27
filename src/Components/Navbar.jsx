@@ -1,13 +1,16 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import styles from './Navbar.module.css'
+import logo from "../Data/SUJ_logo_nobg.png";
 
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false)
 
     return (
         <nav className={styles.navbar}>
-            <Link to="/" className={styles.logo}>柔道</Link>
+            <Link to="/" className={styles.logo}>
+                <img src={logo} alt="logo"/>
+            </Link>
 
             <button
                 className={styles.burger}
