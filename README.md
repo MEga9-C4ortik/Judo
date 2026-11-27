@@ -27,6 +27,7 @@ npm run dev
 | `npm run preview`  | Serve the production build locally              |
 | `npm run lint`     | Run ESLint                                      |
 | `npm run validate` | Check `src/Data/techniques.json` for mistakes   |
+| `npm run check:filter` | Test the technique filter (search, belt, category) |
 
 ## Data
 
