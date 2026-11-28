@@ -1,6 +1,7 @@
 import techniques from "../Data/techniques.json";
 import styles from "./Library.module.css"
 import BeltFilter from "../Components/BeltFilter.jsx";
+import { BELTS } from "../Data/belts.js";
 import { filterTechniques, normalize } from "../lib/filterTechniques.js";
 import TechniqueItem from "../Components/TechniqueItem.jsx";
 import {useState} from "react";
@@ -19,6 +20,18 @@ function Library() {
         beltIndex,
         includeLower,
     });
+
+    const elsewhere = filtered.length === 0
+        ? filterTechniques(techniques, {
+            query: searchQuery,
+            category: selectedCategory,
+            beltIndex: BELTS.length - 1,
+            includeLower: true,
+        }).length
+        : 0;
+
+    const currentBeltName = BELTS[beltIndex]?.name ?? "All belts";
+    const scope = `${currentBeltName}${includeLower ? " & lower" : ""}`;
 
     return (
         <>
@@ -73,8 +86,23 @@ function Library() {
                             />
                         )}
                     </ul>
-                    :
-                    <span className={styles.notFound}> Nothing found </span>
+                    : <div className={styles.emptyResults} role="status">
+                        <p className={styles.notFound}>
+                            Nothing found in {scope}{searching ? ` for “${searchQuery.trim()}”` : ""}
+                        </p>
+                        {elsewhere > 0 && (
+                            <button
+                                type="button"
+                                className={styles.btn}
+                                onClick={() => {
+                                    setBeltIndex(BELTS.length - 1);
+                                    setIncludeLower(true);
+                                }}
+                            >
+                                Show {elsewhere} in all belts
+                            </button>
+                        )}
+                    </div>
                 }
             </div>
         </>
