@@ -4,12 +4,23 @@ import BeltFilter from "../Components/BeltFilter.jsx";
 import { BELTS } from "../Data/belts.js";
 import { filterTechniques, normalize } from "../lib/filterTechniques.js";
 import TechniqueItem from "../Components/TechniqueItem.jsx";
-import {useState} from "react";
+import {useState, useEffect} from "react";
 
 function Library() {
     const [selectedCategory, setCategory] = useState("");
     const [searchQuery, setSearchQuery] = useState("");
-    const [beltIndex, setBeltIndex] = useState(5);
+    const [beltIndex, setBeltIndex] = useState(() => {
+        try {
+            const saved = localStorage.getItem("beltInd");
+            const parsed = saved ? JSON.parse(saved) : null;
+            return typeof parsed === "number" && parsed >= 0 && parsed < BELTS.length
+                ? parsed
+                : 5;
+        } catch (e) {
+            console.log("Error: " + e);
+            return 5;
+        }
+    });
     const [includeLower, setIncludeLower] = useState(true);
 
     const categories = [...new Set(techniques.map((t) => t.category))];
@@ -32,6 +43,14 @@ function Library() {
 
     const currentBeltName = BELTS[beltIndex]?.name ?? "All belts";
     const scope = `${currentBeltName}${includeLower ? " & lower" : ""}`;
+
+    useEffect(() => {
+        try {
+            localStorage.setItem("beltInd", JSON.stringify(beltIndex));
+        } catch (e) {
+            console.log("Error: " + e);
+        }
+    }, [beltIndex]);
 
     return (
         <>
