@@ -17,11 +17,22 @@ function Library() {
                 ? parsed
                 : 5;
         } catch (e) {
-            console.log("Error: " + e);
+            console.log("Error-BeltIndex Local storage: " + e);
             return 5;
         }
     });
-    const [includeLower, setIncludeLower] = useState(true);
+    const [includeLower, setIncludeLower] = useState(() => {
+        try{
+            const saved = localStorage.getItem("includeLower");
+            const parsed = saved ? JSON.parse(saved) : null;
+            return typeof parsed === "boolean"
+                ? parsed
+                : true;
+        } catch (e) {
+            console.log("Error-IncludeLower local storage: " + e);
+            return true;
+        }
+    });
 
     const categories = [...new Set(techniques.map((t) => t.category))];
     const searching = Boolean(normalize(searchQuery));
@@ -48,9 +59,17 @@ function Library() {
         try {
             localStorage.setItem("beltInd", JSON.stringify(beltIndex));
         } catch (e) {
-            console.log("Error: " + e);
+            console.log("Error-SetItem BeltIndex: " + e);
         }
     }, [beltIndex]);
+
+    useEffect(() => {
+        try {
+            localStorage.setItem("includeLower", JSON.stringify(includeLower));
+        } catch (e) {
+            console.log("Error-SetItem IncludeLower: " + e);
+        }
+    }, [includeLower]);
 
     return (
         <>
