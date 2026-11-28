@@ -1,18 +1,20 @@
+import {useState, useEffect} from "react";
 import techniques from "../Data/techniques.json";
+import { BELTS } from "../Data/belts.js";
 import styles from "./Library.module.css"
 import BeltFilter from "../Components/BeltFilter.jsx";
-import { BELTS } from "../Data/belts.js";
-import { filterTechniques, normalize } from "../lib/filterTechniques.js";
 import TechniqueItem from "../Components/TechniqueItem.jsx";
-import {useState, useEffect} from "react";
+import { filterTechniques, normalize } from "../lib/filterTechniques.js";
 
 function Library() {
     const [selectedCategory, setCategory] = useState("");
     const [searchQuery, setSearchQuery] = useState("");
     const [beltIndex, setBeltIndex] = useState(() => {
+        //Storing beltIndex in localStorage
         try {
             const saved = localStorage.getItem("beltInd");
             const parsed = saved ? JSON.parse(saved) : null;
+            //range of beltIndex 0-5 (yellow-black)
             return typeof parsed === "number" && parsed >= 0 && parsed < BELTS.length
                 ? parsed
                 : 5;
@@ -22,6 +24,7 @@ function Library() {
         }
     });
     const [includeLower, setIncludeLower] = useState(() => {
+        //storing include lower flag (def: true)
         try{
             const saved = localStorage.getItem("includeLower");
             const parsed = saved ? JSON.parse(saved) : null;
@@ -36,6 +39,7 @@ function Library() {
 
     const categories = [...new Set(techniques.map((t) => t.category))];
     const searching = Boolean(normalize(searchQuery));
+    //uses ../lib/filterTechnique to filter all data from techniques.json
     const filtered = filterTechniques(techniques, {
         query: searchQuery,
         category: selectedCategory,
@@ -43,6 +47,7 @@ function Library() {
         includeLower,
     });
 
+    //check if there are items among all belts with current search query
     const elsewhere = filtered.length === 0
         ? filterTechniques(techniques, {
             query: searchQuery,
@@ -52,9 +57,11 @@ function Library() {
         }).length
         : 0;
 
+    //labels below belt filter
     const currentBeltName = BELTS[beltIndex]?.name ?? "All belts";
     const scope = `${currentBeltName}${includeLower ? " & lower" : ""}`;
 
+    //useEffect to catch any changes to beltIndex
     useEffect(() => {
         try {
             localStorage.setItem("beltInd", JSON.stringify(beltIndex));
@@ -63,6 +70,7 @@ function Library() {
         }
     }, [beltIndex]);
 
+    //useEffect for include lower flag
     useEffect(() => {
         try {
             localStorage.setItem("includeLower", JSON.stringify(includeLower));
@@ -95,6 +103,7 @@ function Library() {
                     )}
                 </div>
 
+                {/* query */}
                 <input
                     className={styles.search}
                     type="text"
@@ -105,6 +114,7 @@ function Library() {
                 />
             </div>
 
+            {/* Belt filter aka buttons for belts */}
             <BeltFilter
                 beltIndex={beltIndex}
                 onBeltChange={setBeltIndex}
@@ -114,6 +124,8 @@ function Library() {
                 searching={searching}
             />
 
+
+            {/* main content aka library with technique items */}
             <div className={styles.Library}>
                 {(filtered.length > 0) ?
                     <ul className={styles.list} role="list">
@@ -128,6 +140,7 @@ function Library() {
                         <p className={styles.notFound}>
                             Nothing found in {scope}{searching ? ` for “${searchQuery.trim()}”` : ""}
                         </p>
+                        {/* using other techniques that found in other belts*/}
                         {elsewhere > 0 && (
                             <button
                                 type="button"
